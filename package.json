@@ -1,0 +1,16 @@
+{
+  "name": "partner-with",
+  "version": "1.0.0",
+  "description": "repo for ParnterWith.net",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
+  },
+  "author": "",
+  "license": "ISC"
+}
