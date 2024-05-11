@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         adam: resolve(__dirname, "adam.html"),
+        // add future PARTNERwith sites here copying Adam
       },
     },
   },

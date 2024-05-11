@@ -1,1 +1,67 @@
-<p>Hello</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="adam.css" />
+    <title>Adam S</title>
+  </head>
+  <body>
+    <main class="adam-landing-page">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo" href="#home">
+            <img src="adam_img/AdamS-Logo-WhtBlu.png" alt="Adam S logo image" />
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-container">
+          <img
+            src="adam_img/AdamS-Profile-QR-combo-transparent.png"
+            alt="Adam S Profile Photo and QR Code"
+          />
+          <div class="hero-description">
+            <h1>Heading goes here</h1>
+            <p>Quick profile copy inserted here</p>
+          </div>
+        </div>
+        <div class="hero-out"></div>
+      </section>
+      <section class="about">
+        <div class="about-container">
+          <img src="adam_img/01_FamilyPicPlaceHolder.png" alt="Family Photo" />
+          <!-- Cards -->
+        </div>
+        <div class="video-container">
+          <button class="video-button" onclick="videoToggle()">
+            Click Here
+          </button>
+          <div id="vertical-video">
+            <div style="padding: 177.78% 0 0 0; position: relative">
+              <iframe
+                id="video-player"
+                src="https://player.vimeo.com/video/294187310?h=a66096357c&title=0&byline=0"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="adam.js"></script>
+  </body>
+</html>

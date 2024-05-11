@@ -1,0 +1,130 @@
+* {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.adam-landing-page {
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: grid;
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.navbar-container {
+  display: grid;
+  height: 100%;
+  width: auto;
+  place-content: center;
+}
+
+.logo {
+  height: auto;
+  width: auto;
+}
+
+.logo img {
+  height: 200px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  color: #44576d;
+  padding: 15px;
+  place-content: center;
+}
+
+.hero-container img {
+  width: 100%;
+  place-content: center;
+}
+
+.hero-description h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero-description p {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero-out {
+  min-height: 100px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(68, 87, 109, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(68, 87, 109, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(68, 87, 109, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#44576d",GradientType=1);
+}
+
+/* About Section */
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #44576d;
+  padding: 15px;
+}
+
+.about-container img {
+  width: 100%;
+  place-content: center;
+}
+/* video */
+
+.video-button {
+  align-items: center;
+  background: #ffffff;
+  border: 0 solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #44576d;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#vertical-video {
+  display: none;
+  max-width: 400px;
+}
+
+#video-player {
+  border-color: #44576d;
+  border-width: 3px;
+}
