@@ -1,6 +1,8 @@
 First PARTNERwith site - Adam Schrimsher
 Fatherhood Director at WHMC
 
+Pilot website for PARTNERwith.net
+
 Color Palette:
 #29353C
 #44576D
