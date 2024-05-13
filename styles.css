@@ -480,14 +480,15 @@ button:hover {
     font-size: 3rem;
     font-weight: 700;
     padding: 1rem;
+    text-align: center;
   }
 
   .about-intro p {
     font-size: 1.5rem;
     font-weight: 500;
     margin: 1rem;
-    text-align: right;
-    padding-left: 5rem;
+    text-align: center;
+    padding: 1rem;
   }
 
   .about-item-container {
