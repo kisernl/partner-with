@@ -362,6 +362,8 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    min-height: 600px;
+    padding: 0 50px;
   }
 
   .hero-heading,
@@ -383,14 +385,17 @@ button:hover {
     font-size: 4rem;
     font-weight: 700;
     padding: 15px;
-    padding-left: 50px;
+    text-align: right;
+    /* padding-left: 50px; */
   }
 
   .hero-description p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    padding-left: 50px;
-    padding-right: 150px;
+    padding: 15px;
+    text-align: right;
+    /* padding-left: 50px; */
+    /* padding-right: 150px; */
   }
 
   .hero-img {
