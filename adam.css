@@ -128,3 +128,9 @@
   border-color: #44576d;
   border-width: 3px;
 }
+
+.maincontainer {
+  position: relative;
+  width: 250px;
+  background: green;
+}
