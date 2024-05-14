@@ -8,7 +8,7 @@ const mobileMenu = () => {
   menuLinks.classList.toggle("active");
 };
 
-menu.addEventListener("click", mobileMenu);
+// menu.addEventListener("click", mobileMenu);
 
 // Show active menu when scrolling
 const highlightMenu = () => {
@@ -52,10 +52,11 @@ const hideMobileMenu = () => {
   }
 };
 
-menuLinks.addEventListener("click", hideMobileMenu);
-navLogo.addEventListener("click", hideMobileMenu);
+// menuLinks.addEventListener("click", hideMobileMenu);
+// navLogo.addEventListener("click", hideMobileMenu);
 
 // video button toggle
+document.querySelector("#video-button").addEventListener("click", videoToggle);
 function videoToggle() {
   const video = document.getElementById("vertical-video");
   if (video.style.display === "none") {
@@ -76,3 +77,5 @@ const options = {
 };
 
 const player = new Vimeo.Player("video-player", options);
+
+console.log("punchthatguyinthethroat");
