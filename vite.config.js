@@ -7,7 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        adam: resolve(__dirname, "adam/index.html"),
+        adam: resolve(__dirname, "adam.html"),
         // add future PARTNERwith sites here copying Adam
       },
     },
