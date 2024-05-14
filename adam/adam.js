@@ -64,3 +64,15 @@ function videoToggle() {
     video.style.display = "none"; // Hide the video
   }
 }
+
+// play video
+// vimeo-player.js
+
+const options = {
+  id: 294187310, // Vimeo video ID
+  title: false,
+  byline: false,
+  autoplay: true,
+};
+
+const player = new Vimeo.Player("video-player", options);
