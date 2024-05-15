@@ -200,6 +200,7 @@
 }
 
 .info-card img {
+  width: 100%;
   max-width: 500px;
   border: 1px solid #44576d;
 }
