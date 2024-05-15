@@ -219,6 +219,7 @@
 .now-story {
   display: grid;
   grid-template-columns: 1fr;
+  color: #ffffff;
   background-color: #44576d;
   padding: 15px;
 }
@@ -232,7 +233,7 @@
 .future-story {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #44576d;
+  background-color: #e6e6e6;
   padding: 15px;
 }
 
@@ -245,6 +246,7 @@
 .invitation {
   display: grid;
   grid-template-columns: 1fr;
+  color: #ffffff;
   background-color: #44576d;
   padding: 15px;
 }
@@ -258,7 +260,7 @@
 .partner {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #44576d;
+  background-color: #ffffff;
   padding: 15px;
 }
 
