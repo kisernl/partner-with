@@ -134,3 +134,37 @@
   width: 250px;
   background: green;
 }
+
+.info-cards {
+  box-sizing: border-box;
+}
+
+.card-container {
+  width: 100%;
+  position: relative;
+  height: 567px;
+  overflow-y: auto;
+  place-content: center;
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.card:nth-child(2) {
+  top: 10px;
+  margin-bottom: auto;
+}
+
+.card:nth-child(3) {
+  top: 20px;
+}
+
+.card img {
+  max-width: 500px;
+  border: 1px solid #44576d;
+}
