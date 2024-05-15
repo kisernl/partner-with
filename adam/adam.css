@@ -268,3 +268,9 @@
   width: 100%;
   place-content: center;
 }
+
+.email-signup {
+  display: grid;
+  width: 100%;
+  place-content: center;
+}
