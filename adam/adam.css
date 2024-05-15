@@ -2,7 +2,7 @@
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  /* font-style: normal; */
 }
 
 .adam-landing-page {
@@ -33,6 +33,11 @@
   height: 200px;
 }
 
+.profile p {
+  text-align: center;
+  font-size: 1rem;
+}
+
 .hero-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -59,8 +64,8 @@
   text-align: center;
 }
 
-.hero-out {
-  min-height: 100px;
+/*.hero-out {
+   min-height: 100px;
   background: rgb(255, 255, 255);
   background: -moz-linear-gradient(
     180deg,
@@ -77,8 +82,8 @@
     rgba(255, 255, 255, 1) 0%,
     rgba(68, 87, 109, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#44576d",GradientType=1);
-}
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#44576d",GradientType=1); 
+}*/
 
 /* About Section */
 .about {
@@ -94,12 +99,12 @@
 }
 /* video */
 
-.video-button {
+#video-button {
   align-items: center;
   background: #ffffff;
   border: 0 solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   color: #44576d;
   display: inline-flex;
@@ -109,7 +114,7 @@
   justify-content: center;
   line-height: 24px;
   overflow-wrap: break-word;
-  padding: 24px;
+  padding: 14px;
   text-decoration: none;
   width: auto;
   border-radius: 8px;
@@ -121,13 +126,18 @@
 
 #vertical-video {
   display: none;
+  align-items: center;
+  justify-content: center;
   max-width: 400px;
 }
 
 #video-player {
   border-color: #44576d;
-  border-width: 3px;
+  border-width: 2px;
+  align-items: center;
+  justify-content: center;
 }
+
 /* Verse-Quote Section */
 .verse-quote {
   display: grid;
@@ -137,7 +147,7 @@
   padding: 15px;
 }
 
-.about-out {
+/* .about-out {
   min-height: 100px;
   background: rgb(68, 87, 109);
   background: -moz-linear-gradient(
@@ -156,7 +166,7 @@
     rgba(230, 230, 230, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#44576d",endColorstr="#e6e6e6",GradientType=1);
-}
+} */
 
 /* Cards Section */
 .cards {
