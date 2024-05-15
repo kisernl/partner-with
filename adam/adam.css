@@ -168,6 +168,42 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#44576d",endColorstr="#e6e6e6",GradientType=1);
 } */
 
+/* info cards section*/
+
+.info-cards {
+  box-sizing: border-box;
+}
+
+.info-card-container {
+  width: 100%;
+  position: relative;
+  height: 567px;
+  overflow-y: auto;
+  place-content: center;
+}
+
+.info-card {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.info-card:nth-child(2) {
+  top: 10px;
+  margin-bottom: auto;
+}
+
+.info-card:nth-child(3) {
+  top: 20px;
+}
+
+.info-card img {
+  max-width: 500px;
+  border: 1px solid #44576d;
+}
+
 /* Cards Section */
 .cards {
   display: grid;
