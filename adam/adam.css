@@ -178,22 +178,23 @@
 .info-card-container {
   display: grid;
   width: 100%;
+  aspect-ratio: 1/1;
   position: relative;
-  height: 415px;
+  /* max-height: 415px; */
   overflow-y: auto;
 }
 
 .info-card {
   position: sticky;
   top: 0;
-  padding: 20px;
+  padding: 10px;
   /* margin-bottom: auto; */
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   max-width: 450px;
   display: grid;
   /* place-content: center; */
 }
-
+/* 
 .info-card:nth-child(2) {
   top: 2%;
   margin-bottom: auto;
@@ -201,8 +202,9 @@
 
 .info-card:nth-child(3) {
   top: 4%;
+  margin-bottom: auto;
 }
-
+ */
 .info-card img {
   max-width: 100%;
   border: 1px solid #44576d;
