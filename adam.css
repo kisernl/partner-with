@@ -170,7 +170,8 @@
 }
 
 /* partner buttons */
-.partner-buttons {
+.partner-buttons,
+.button-81 {
   display: grid;
   grid-column: 1fr;
   grid-gap: 1rem;
@@ -183,7 +184,7 @@
   border-radius: 1.5rem;
   box-sizing: border-box;
   color: #44576d;
-  /* cursor: pointer; */
+  cursor: pointer;
   display: inline-block;
   /* font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, 
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
@@ -192,7 +193,7 @@
   font-weight: 600;
   line-height: 1;
   padding: 1rem 1.6rem;
-  max-width: 250px;
+  width: 250px;
   text-align: center;
   text-decoration: none #0d172a solid;
   text-decoration-thickness: auto;
