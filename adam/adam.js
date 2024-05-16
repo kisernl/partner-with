@@ -34,4 +34,30 @@ const options = {
 
 const player = new Vimeo.Player("video-player", options);
 
-console.log("punchthatguyinthethroat");
+console.log("javascript is running!");
+
+// javascript for buttons
+
+document
+  .querySelector("#prayer-button")
+  .addEventListener("click", prayerToggle);
+function prayerToggle() {
+  const prayerDiv = document.getElementById("prayer-div");
+  if (prayerDiv.style.display === "none") {
+    prayerDiv.style.display = "block"; // Show the div
+  } else {
+    prayerDiv.style.display = "none"; // Hide the div
+  }
+}
+
+document
+  .querySelector("#mailchimp-button")
+  .addEventListener("click", divToggle);
+function divToggle() {
+  const mailchimpDiv = document.getElementById("mailchimp-div");
+  if (mailchimpDiv.style.display === "none") {
+    mailchimpDiv.style.display = "block"; // Show the div
+  } else {
+    mailchimpDiv.style.display = "none"; // Hide the div
+  }
+}

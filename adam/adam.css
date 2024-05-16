@@ -309,12 +309,7 @@
 .partner-container {
   width: 100%;
   place-content: center;
-}
-
-.email-signup {
-  display: grid;
-  width: 100%;
-  place-content: center;
+  text-align: center;
 }
 
 /* partner buttons */
@@ -324,6 +319,7 @@
   grid-column: 1fr;
   grid-gap: 1rem;
   padding: 1rem;
+  place-items: center;
 }
 
 .button-81 {
@@ -337,11 +333,11 @@
   /* font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, 
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1;
   padding: 1rem 1.6rem;
-  width: 250px;
+  width: 200px;
   text-align: center;
   text-decoration: none #0d172a solid;
   text-decoration-thickness: auto;
@@ -362,4 +358,10 @@
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
+}
+
+.partner-buttons p {
+  display: grid;
+  width: 100%;
+  place-content: center;
 }
