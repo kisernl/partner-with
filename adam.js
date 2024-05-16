@@ -1,14 +1,14 @@
 // video button toggle
 
-document.querySelector("#video-button").addEventListener("click", videoToggle);
-function videoToggle() {
-  const video = document.getElementById("vertical-video");
-  if (video.style.display === "none") {
-    video.style.display = "block"; // Show the video
-  } else {
-    video.style.display = "none"; // Hide the video
-  }
-}
+// document.querySelector("#video-button").addEventListener("click", videoToggle);
+// function videoToggle() {
+//   const video = document.getElementById("vertical-video");
+//   if (video.style.display === "none") {
+//     video.style.display = "block"; // Show the video
+//   } else {
+//     video.style.display = "none"; // Hide the video
+//   }
+// }
 
 document
   .querySelector("#prayer-button")
@@ -33,3 +33,19 @@ function divToggle() {
     mailchimpDiv.style.display = "none"; // Hide the div
   }
 }
+
+document.getElementById("openPopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("openPopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "none";
+});
