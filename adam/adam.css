@@ -403,6 +403,10 @@
   color: #ffffff;
 }
 
+#mailchimp-div {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .button-81 {
     font-size: 1.125rem;
