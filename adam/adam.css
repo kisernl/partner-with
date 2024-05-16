@@ -365,3 +365,9 @@
   width: 100%;
   place-content: center;
 }
+
+#mailchimp-div {
+  display: grid;
+  width: 100%;
+  place-content: center;
+}
