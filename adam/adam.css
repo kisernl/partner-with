@@ -64,6 +64,10 @@
   text-align: center;
 }
 
+#hero-2 {
+  text-align: center;
+}
+
 @media (min-width: 960px) {
   /* reorder profile area */
 
@@ -88,6 +92,7 @@
 
   #hero-2 {
     grid-area: hero2; /* Allow hero-2 to span across the second and third columns */
+    font-size: 1.25rem;
   }
 
   #hero-3 {
@@ -114,39 +119,49 @@
   }
 }
 
-/*.hero-out {
-   min-height: 100px;
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(68, 87, 109, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(68, 87, 109, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(68, 87, 109, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#44576d",GradientType=1); 
-}*/
-
 /* About Section */
 .about {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Single column layout */
   background-color: #44576d;
-  padding: 15px;
+  padding: 1rem;
 }
 
-.about-container img {
-  width: 100%;
-  place-content: center;
+.about-img {
+  text-align: center; /* Center align the image */
 }
+
+.about-img img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.verse-quote {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #44576d;
+  color: #ffffff;
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.verse {
+  padding-top: 0;
+}
+
+.video-container {
+  text-align: center; /* Center align the video button and player */
+}
+
+#video-button {
+  padding: 10px 20px; /* Adjust button padding */
+  font-size: 16px; /* Adjust button font size */
+}
+
+#vertical-video {
+  display: none; /* Initially hide the video player */
+}
+
 /* video */
 
 #video-button {
@@ -179,6 +194,7 @@
   align-items: center;
   justify-content: center;
   max-width: 400px;
+  padding-top: 1rem;
 }
 
 #video-player {
@@ -188,35 +204,19 @@
   justify-content: center;
 }
 
-/* Verse-Quote Section */
-.verse-quote {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: #44576d;
-  color: #ffffff;
-  padding: 15px;
-}
+/* desktop @media for about section */
 
-/* .about-out {
-  min-height: 100px;
-  background: rgb(68, 87, 109);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(68, 87, 109, 1) 35%,
-    rgba(230, 230, 230, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(68, 87, 109, 1) 35%,
-    rgba(230, 230, 230, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(68, 87, 109, 1) 35%,
-    rgba(230, 230, 230, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#44576d",endColorstr="#e6e6e6",GradientType=1);
-} */
+@media (min-width: 960px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    padding: 30px; /* Increase padding for better spacing */
+  }
+
+  .about img {
+    width: 100%;
+  }
+}
 
 /* info cards section*/
 
@@ -408,16 +408,16 @@
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
-}
 
-.partner-buttons p {
-  display: grid;
-  width: 100%;
-  place-content: center;
-}
+  .partner-buttons p {
+    display: grid;
+    width: 100%;
+    place-content: center;
+  }
 
-#mailchimp-div {
-  display: grid;
-  width: 100%;
-  place-content: center;
+  #mailchimp-div {
+    display: grid;
+    width: 100%;
+    place-content: center;
+  }
 }
