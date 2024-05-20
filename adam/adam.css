@@ -405,6 +405,7 @@
   width: 100%;
   place-content: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 /* partner buttons */
@@ -415,6 +416,7 @@
   grid-gap: 1rem;
   padding: 1rem;
   place-items: center;
+  place-content: center;
 }
 
 .button-81 {
@@ -432,7 +434,7 @@
   font-weight: 600;
   line-height: 1;
   padding: 1rem 1.6rem;
-  width: 200px;
+  width: 350px;
   text-align: center;
   text-decoration: none #0d172a solid;
   text-decoration-thickness: auto;
