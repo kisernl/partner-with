@@ -7,6 +7,10 @@
       @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
     </style>
     <link rel="stylesheet" href="adam.css" />
+    <script
+      src="https://kit.fontawesome.com/395e51313e.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Adam S</title>
   </head>
   <body>
@@ -44,7 +48,14 @@
           </div>
           <div class="hero-description" id="hero-3">
             <h1>Fatherhood Director</h1>
-            <p>Quick profile copy inserted here</p>
+            <h2>Women’s Hope Medical Clinic</h2>
+            <p>
+              <i
+                >Women’s Hope Medical Clinic exists to glorify God through
+                sharing the Gospel of Christ while empowering individuals to
+                make healthy, Godly decisions for life.</i
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -144,10 +155,12 @@
       <div class="cards-out"></div> -->
       <section class="past-story">
         <div class="past-container">
-          <img
-            src="adam_img/AdamS_How_We_Got_Here.png"
-            alt="personal journey infographic"
-          />
+          <div class="past-container-pic">
+            <img
+              src="adam_img/AdamS_How_We_Got_Here.png"
+              alt="personal journey infographic"
+            />
+          </div>
           <div class="past-description">
             <h1>How We Got Here</h1>
             <p>
@@ -166,17 +179,40 @@
         <div class="now-container">
           <div class="info-cards">
             <div class="info-card-container">
-              <!-- Waiting on slide from clinet, will insert below -->
+              <!-- Waiting on slide from client, will insert below -->
               <!-- <div class="info-card">
                 <img src="adam_img/AdamS_What_God_is_Doing_.png" />
               </div> -->
-
-              <div class="info-card">
-                <img src="adam_img/AdamS_What_God_is_Doing_Circle.png" />
+              <div class="slider-wrapper">
+                <button class="slide-arrow" id="slide-arrow-prev">
+                  &#8249;
+                </button>
+                <button class="slide-arrow" id="slide-arrow-next">
+                  &#8250;
+                </button>
+                <ul class="slides-container" id="slides-container">
+                  <li class="slide">
+                    <img src="adam_img/AdamS_What_God_is_Doing_Stats.png" />
+                  </li>
+                  <li class="slide">
+                    <img src="adam_img/AdamS_What_God_is_Doing_map.png" />
+                  </li>
+                  <li class="slide">
+                    <img src="adam_img/AdamS_What_God_is_Doing_Circle.png" />
+                  </li>
+                </ul>
+              </div>
+              <!-- above for desktop and below for mobile -->
+              <div class="info-card" id="slide1">
+                <img src="adam_img/AdamS_What_God_is_Doing_Stats.png" />
               </div>
 
-              <div class="info-card">
+              <div class="info-card" id="slide2">
                 <img src="adam_img/AdamS_What_God_is_Doing_map.png" />
+              </div>
+
+              <div class="info-card" id="slide3">
+                <img src="adam_img/AdamS_What_God_is_Doing_Circle.png" />
               </div>
             </div>
           </div>
@@ -195,79 +231,38 @@
       <section class="potrait-cards">
         <div class="portrait-cards-container">
           <h1>Where Conversations Happen</h1>
-          <h2>The Clinic</h2>
+          <!-- clinic pictures -->
           <div class="pictures">
-            <div class="picture" data-picture="clinic">
-              <img src="adam_img/Clinic.jpg" alt="clinic lobby" />
+            <div class="picture" data-picture="clinic-cover">
+              <img src="adam_img/Clinic_1.png" alt="clinic title" />
             </div>
-            <div class="picture" data-picture="sign">
-              <img src="adam_img/aslam-mac-evr_MgxRNC4-unsplash.jpg" alt="" />
+            <div class="picture" data-picture="clinic lobby">
+              <img src="adam_img/Clinic_2.png" alt="clinic lobby" />
             </div>
-            <div class="picture" data-picture="ocean">
-              <img
-                src="adam_img/avery-cocozziello-6EzEQUMF2h4-unsplash.jpg"
-                alt=""
-              />
+            <div class="picture" data-picture="clinic sonogram">
+              <img src="adam_img/Clinic_3.png" alt="clinic sonogram" />
             </div>
-            <div class="picture" data-picture="tree">
-              <img
-                src="adam_img/michiel-annaert-e5KaB_SmAIo-unsplash.jpg"
-                alt=""
-              />
+            <div class="picture" data-picture="clinic room">
+              <img src="adam_img/Clinic_4.png" alt="clinic room" />
             </div>
           </div>
-          <h2>The Family Life Center</h2>
+          <!-- Hope Family Center pictures -->
           <div class="pictures">
-            <div class="picture" data-picture="sign">
-              <img src="adam_img/FLC.jpg" alt="" />
+            <div class="picture" data-picture="hfc-cover">
+              <img src="adam_img/Family_1.png" alt="hfc cover" />
             </div>
-            <div class="picture" data-picture="sign">
-              <img src="adam_img/aslam-mac-evr_MgxRNC4-unsplash.jpg" alt="" />
+            <div class="picture" data-picture="hfc lobby">
+              <img src="adam_img/Family_2.png" alt="hfc lobby" />
             </div>
-            <div class="picture" data-picture="ocean">
-              <img
-                src="adam_img/avery-cocozziello-6EzEQUMF2h4-unsplash.jpg"
-                alt=""
-              />
+            <div class="picture" data-picture="hfc boutique">
+              <img src="adam_img/Family_3.png" alt="hfc boutique" />
             </div>
-            <div class="picture" data-picture="tree">
-              <img
-                src="adam_img/michiel-annaert-e5KaB_SmAIo-unsplash.jpg"
-                alt=""
-              />
+            <div class="picture" data-picture="hfc man cave">
+              <img src="adam_img/Family_4.png" alt="hfc man cave" />
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="portrait-cards">
-        <div class="portrait-cards-container">
-          <div class="potrait-cards-description">
-            <h1>Where Conversations Happen</h1>
-          </div> -->
-      <!-- Trying out Instagram Stories style slider -->
-      <!-- <div class="info-cards-portrait">
-            <div class="info-card-container-portrait">
-              <div class="info-card-portrait">
-                <img
-                  src="https://images.unsplash.com/photo-1600058644231-c99658f408ce?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                />
-              </div>
-
-              <div class="info-card-portrait">
-                <img
-                  src="https://images.unsplash.com/photo-1615912844755-bd8b6dd6789e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                />
-              </div>
-
-              <div class="info-card-portrait">
-                <img
-                  src="https://images.unsplash.com/photo-1570546882730-485d943a233a?q=80&w=2242&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <!-- <section class="future-story">
         <div class="future-container">
           <div class="info-cards">
@@ -481,7 +476,10 @@
           <!-- </p> -->
         </div>
         <div id="button-3">
-          <a href="https://womenshope.org/donate/" target="_blank">
+          <a
+            href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=158046208"
+            target="_blank"
+          >
             <button class="button-81" id="support-link" role="button">
               Support
             </button>
