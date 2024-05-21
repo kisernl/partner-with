@@ -147,6 +147,7 @@
 
 .verse {
   padding-top: 0;
+  text-align: justify;
 }
 
 .video-container {
@@ -343,8 +344,19 @@
 .past-story {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #ffffff;
+  color: #dfebf6;
+  background-color: #768a96;
   padding: 15px;
+  text-align: justify;
+}
+
+.past-story h1 {
+  text-align: right;
+  padding-top: 2rem;
+}
+
+.past-story p {
+  font-size: 1.1rem;
 }
 
 .past-container img {
@@ -356,8 +368,8 @@
 .now-story {
   display: grid;
   grid-template-columns: 1fr;
-  color: #ffffff;
-  background-color: #44576d;
+  color: #29353c;
+  background-color: #aac7d8;
   padding: 15px;
 }
 
@@ -366,17 +378,120 @@
   place-content: center;
 }
 
+.portrait-cards {
+  height: 100vh;
+  background-color: #dfebf6;
+  color: #44576d;
+}
+
+.portrait-cards-container {
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.portrait-cards-container h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pictures {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 10px;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.picture {
+  width: 340px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  margin: 10px;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.now-description {
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+.now-description h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
 /* Future Story Section */
 .future-story {
   display: grid;
   grid-template-columns: 1fr;
+  height: auto;
   background-color: #e6e6e6;
   padding: 15px;
 }
 
-.future-container img {
+/* .future-container img {
   width: 100%;
   place-content: center;
+} */
+
+/* Container for the cards */
+/* .portrait-cards {
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+}
+
+.portrait-cards-container {
+  display: grid;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.info-card-container-portrait {
+  position: relative;
+  width: 100%;
+  height: 300%;
+} */
+
+/* Individual card styling */
+.info-card-portrait {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-content: center;
+  z-index: 1;
+}
+
+.info-card-portrait:nth-child(2) {
+  z-index: 2;
+}
+
+.info-card-portrait:nth-child(3) {
+  z-index: 3;
+}
+
+/* Image styling within the card */
+.info-card-portrait img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #44576d;
+  display: block;
 }
 
 /* Invitation Section */
@@ -391,6 +506,7 @@
 .invitation-container {
   width: 100%;
   place-content: center;
+  text-align: justify;
 }
 
 /* Partner Section */
@@ -446,7 +562,7 @@
 }
 
 .button-81:hover {
-  background-color: #44576d;
+  background-color: #aac7d8;
   color: #ffffff;
 }
 
