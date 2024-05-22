@@ -71,3 +71,15 @@ function divToggle() {
     mailchimpDiv.style.display = "none"; // Hide the div
   }
 }
+
+document
+  .querySelector("#support-button")
+  .addEventListener("click", supportToggle);
+function supportToggle() {
+  const supportDiv = document.getElementById("support-div");
+  if (supportDiv.style.display === "none") {
+    supportDiv.style.display = "block"; // Show the div
+  } else {
+    supportDiv.style.display = "none"; // Hide the div
+  }
+}
