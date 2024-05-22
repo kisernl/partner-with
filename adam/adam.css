@@ -480,6 +480,12 @@
   width: 100%;
 }
 
+#support-div {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
 .button-out {
   color: #44576d;
   background-color: #e6e6e6;
