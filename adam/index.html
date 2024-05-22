@@ -1082,7 +1082,7 @@
                        window.captchaLoadCallback = function() {
                             Bloomerang.gRecaptchaLoaded = true;
                         };
-                        Bloomerang.Util.load('https://www.google.com/recaptcha/api.js?onload=captchaLoadCallback&render=explicit',
+                        Bloomerang.Util.load('https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key',
                             function() { return Bloomerang.gRecaptchaLoaded; },
                             function() {
                                 jQuery('.section.captcha').removeAttr('style');
