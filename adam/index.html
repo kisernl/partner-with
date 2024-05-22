@@ -11,7 +11,6 @@
       src="https://kit.fontawesome.com/395e51313e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
 
     <title>Adam S</title>
   </head>
@@ -1082,7 +1081,7 @@
                        window.captchaLoadCallback = function() {
                             Bloomerang.gRecaptchaLoaded = true;
                         };
-                        Bloomerang.Util.load('https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key',
+                        Bloomerang.Util.load('https://www.google.com/recaptcha/api.js?onload=captchaLoadCallback&render=explicit',
                             function() { return Bloomerang.gRecaptchaLoaded; },
                             function() {
                                 jQuery('.section.captcha').removeAttr('style');
