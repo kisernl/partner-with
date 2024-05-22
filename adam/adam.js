@@ -11,38 +11,6 @@ document
     });
   });
 
-// no video used in site currently - commenting out to save for future
-// video popup
-// document.getElementById("openPopup").addEventListener("click", function () {
-//   document.getElementById("popup").style.display = "block";
-// });
-
-// document.getElementById("closePopup").addEventListener("click", function () {
-//   document.getElementById("popup").style.display = "none";
-// });
-
-// // video button toggle
-// document.querySelector("#video-button").addEventListener("click", videoToggle);
-// function videoToggle() {
-//   const video = document.getElementById("vertical-video");
-//   if (video.style.display === "none") {
-//     video.style.display = "block"; // Show the video
-//   } else {
-//     video.style.display = "none"; // Hide the video
-//   }
-// }
-
-// // play video -- no idea if this is needed!
-
-// const options = {
-//   id: 294187310, // Vimeo video ID
-//   title: false,
-//   byline: false,
-//   autoplay: true,
-// };
-
-// const player = new Vimeo.Player("video-player", options);
-
 console.log("javascript is running!");
 
 // javascript for slider
@@ -61,6 +29,22 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
+
+// javascript for accordion
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
 
 // javascript for buttons
 
