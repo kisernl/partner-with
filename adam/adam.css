@@ -337,7 +337,9 @@
   grid-template-columns: 1fr;
   color: #44576d;
   background-color: #e6e6e6;
-  padding: 15px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .invitation-container {
