@@ -54,3 +54,17 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
+
+// contact form button
+
+document
+  .querySelector("#contact-button")
+  .addEventListener("click", contactToggle);
+function contactToggle() {
+  const contactDiv = document.getElementById("contact-us-div");
+  if (contactDiv.style.display === "none") {
+    contactDiv.style.display = "block"; // Show the div
+  } else {
+    contactDiv.style.display = "none"; // Hide the div
+  }
+}
