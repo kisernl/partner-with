@@ -93,12 +93,66 @@
 
 .spacer {
   height: 2rem;
-  background-color: #ffffff;
 }
 
 .profile p {
   text-align: center;
   font-size: 1rem;
+}
+
+.portrait-cards {
+  height: 100vh;
+  background-color: #fffef9;
+  color: #63465a;
+}
+
+.portrait-cards-container {
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.portrait-cards-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+.portrait-cards-container h2 {
+  text-align: right;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  margin-top: 0;
+}
+
+.pictures {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 10px;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.picture {
+  max-width: 340px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  margin: 10px;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer-container {
