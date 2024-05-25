@@ -10,6 +10,12 @@
   margin: 0 auto;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .kristin-landing-page {
   /* max-width: 85rem; */
   padding-left: 1rem;
@@ -175,6 +181,320 @@
   object-fit: cover;
   background-color: inherit;
   flex-shrink: 1;
+}
+/* Section Verse Accordion -- MOBILE ONLY */
+.accordion {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  /* grid-template-columns: repeat(auto-fit, min(100%, 30rem)); */
+  /* min-height: 100vh; */
+  width: 100%;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #63465a;
+  background: #fffef9;
+}
+
+/* Core styles/functionality */
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 100%;
+}
+
+/* Visual styles */
+
+.accordion {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.accordion h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  /* padding-top: 2rem; */
+  padding-bottom: 2rem;
+}
+
+.accordion-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  color: #63465a;
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tab__label,
+.tab__close {
+  display: flex;
+  color: white;
+  background: #63465a;
+  cursor: pointer;
+}
+.tab__label {
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Modal Popouts for Maps */
+
+.map-modals {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#mapImg {
+  border: 2px solid #63465a;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+#mapImg2 {
+  border: 2px solid #63465a;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  max-width: 150%;
+}
+
+/* Caption of Modal Image */
+/* #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  /* background-color: inherit; */
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Section: Verse Cards -- DESKTOP ONLY */
+.verse-cards {
+  display: none;
+  color: #63465a;
+  background-color: #fbecde;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.verse-cards-container {
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  place-content: center;
+  max-width: 300px;
+  background-color: #fbecde;
+  aspect-ratio: 1 / 1;
+  /* padding-left: 5px;
+  padding-top: 2rem;
+  padding-bottom: 2rem; */
+  /* background-color: inherit; */
+}
+
+.verse-card {
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  width: 350px;
+  height: 700px;
+  /* margin: -150px; */
+  float: left;
+  perspective: 500px;
+  background-color: #fbecde;
+  place-items: center;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.verse-card:hover .card-content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card-front,
+.card-back {
+  display: grid;
+  grid-gap: 1rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #63465a;
+  color: #fffef9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  font-size: 1rem;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+
+.card-front h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  background: #63465a;
+  color: #fffef9;
+}
+
+.card-back h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+  background: #63465a;
+  color: #fffef9;
+}
+
+.card-back p {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  margin: 0;
+  background: #63465a;
+  color: #fffef9;
+}
+
+.card-back i,
+.card-back u {
+  background: #63465a;
+  color: #fffef9;
+}
+
+.card-back {
+  background: #63465a;
+  color: #fffef9;
+  transform: rotateY(180deg);
+  grid-gap: 0;
 }
 
 .footer-container {
