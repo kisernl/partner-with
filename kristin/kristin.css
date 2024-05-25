@@ -110,6 +110,10 @@
   font-size: 1rem;
 }
 
+.timeline-container img {
+  width: 100%;
+}
+
 .portrait-cards {
   color: #63465a;
   background-color: #fbecde;
