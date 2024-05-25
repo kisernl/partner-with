@@ -1,3 +1,16 @@
+// smooth scroll to partner section
+document
+  .getElementById("link-to-partner")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default anchor link behavior
+
+    // Use the scrollTo method with smooth behavior
+    window.scrollTo({
+      top: document.getElementById("partner").offsetTop, // Get the vertical position of the target element
+      behavior: "smooth", // Enable smooth scrolling
+    });
+  });
+
 // Get the modal
 let modal = document.getElementById("myModal");
 
