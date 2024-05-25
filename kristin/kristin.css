@@ -6,11 +6,14 @@
   color: #63465a;
   background-color: #fffef9;
   /* font-style: normal; */
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .kristin-landing-page {
-  max-width: 85rem;
-  margin: 0 auto;
+  /* max-width: 85rem; */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar {
@@ -40,9 +43,9 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 15px;
+  grid-gap: 2rem;
   color: #44576d;
-  padding: 15px;
+  padding: 1rem;
   place-content: center;
   place-items: center;
   height: auto;
@@ -67,28 +70,35 @@
 #partner-button {
   padding-bottom: 0;
 }
+.hero-spacer {
+  height: 2rem;
+}
 
 .hero-description h1 {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
+  padding-top: 1.5rem;
 }
 
-.hero-description h2 {
-  font-size: 2.25rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.hero-description p {
+.hero p {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
+  padding: 0.5rem;
+  padding-top: 2rem;
 }
 
-#hero-2 {
+#hero-2 p {
   text-align: center;
   font-size: 1.25rem;
+  padding-top: 0;
+}
+
+#lg-logo {
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 .spacer {
@@ -101,16 +111,16 @@
 }
 
 .portrait-cards {
-  height: 100vh;
-  background-color: #fffef9;
   color: #63465a;
+  background-color: #fbecde;
 }
 
 .portrait-cards-container {
   overflow: hidden;
   padding-left: 5px;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: inherit;
 }
 
 .portrait-cards-container h1 {
@@ -118,17 +128,21 @@
   font-size: 2rem;
   padding-bottom: 1rem;
   margin-bottom: 0;
+  background-color: inherit;
 }
 
 .portrait-cards-container h2 {
   text-align: right;
   font-size: 1.5rem;
   padding-right: 2rem;
+  padding-bottom: 1.5rem;
   margin-top: 0;
+  background-color: inherit;
 }
 
 .pictures {
   display: flex;
+  background-color: inherit;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 10px;
@@ -140,19 +154,23 @@
 }
 
 .picture {
-  max-width: 340px;
+  width: 100%;
+  max-width: 325px;
   height: auto;
   flex-shrink: 0;
   border-radius: 30px;
   overflow: hidden;
   scroll-snap-align: start;
   margin: 10px;
+  background-color: inherit;
 }
 
 .picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: inherit;
+  flex-shrink: 1;
 }
 
 .footer-container {
