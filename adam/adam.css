@@ -6,7 +6,8 @@
 }
 
 .adam-landing-page {
-  max-width: 85rem;
+  /* max-width: 85rem; */
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -525,6 +526,7 @@
   height: 5rem;
 }
 
+/* adjusted for iPad @ 1080 x 820 */
 @media (min-width: 960px) {
   /* reorder profile area */
 
@@ -532,14 +534,15 @@
     max-width: 1080px;
     place-content: center;
   }
+
   .hero-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr; /* Three equal columns */
-    grid-template-rows: auto auto; /* Two rows, size based on content */
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "hero1 hero3 hero3"
-      "hero1 hero2 hero2"; /* hero-2 spans the second and third columns */
-    grid-gap: 2rem;
+      "hero2 hero2 hero2"; /* hero-2 spans the second and third columns */
+    grid-gap: 0rem;
     padding-left: 100px; /* Increase padding */
     padding-right: 100px;
     padding-bottom: 50px;
@@ -554,51 +557,136 @@
   #hero-2 {
     grid-area: hero2; /* Allow hero-2 to span across the second and third columns */
     font-size: 1.25rem;
+    align-self: start;
+    margin-top: 0;
   }
 
   #hero-3 {
     grid-area: hero3; /* Assign hero-3 to span the second and third columns */
+    place-content: center;
   }
 
   .hero-container img {
-    width: 75%; /* Adjust width to prevent overly large images */
-    margin: auto; /* Center the image within the grid column */
+    width: 100%;
+    margin: auto;
   }
 
   .profile {
     padding: 0rem;
   }
 
+  #hero-2 p,
+  #hero-2 i {
+    margin-top: 0;
+  }
+
+  .hero-description {
+    padding-left: 2rem;
+  }
+
   .hero-description h1 {
-    font-size: 3rem; /* Increase font size for better visibility on large screens */
+    font-size: 2.75rem;
+  }
+
+  .hero-description h2 {
+    font-size: 2rem;
   }
 
   .hero-description p {
-    font-size: 2rem; /* Increase paragraph font size for readability */
+    font-size: 1.75rem; /* Increase paragraph font size for readability */
   }
 
   .about {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
-    padding: 30px; /* Increase padding for better spacing */
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 0rem;
+    padding: 30px;
+    padding-left: 0;
+    height: 700px;
+    box-sizing: border-box;
   }
 
-  .about img {
+  .about-img {
     width: 100%;
+    place-content: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    place-content: center;
+    margin: auto;
+  }
+
+  .about-container {
+    width: 100%;
+    place-content: center;
+  }
+
+  .about-container h1 {
+    font-size: 3rem;
+    align-self: end;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-container p {
+    font-size: 1.45rem;
+  }
+
+  .spacer {
+    height: 4rem;
   }
 
   .past-story {
     display: grid;
-  }
-  .past-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
-    padding: 30px; /* Increase padding for better spacing */
+    width: 100%;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    height: 700px;
+    box-sizing: border-box;
   }
 
-  .past-container img {
+  .past-container {
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "past2 past1";
+    grid-gap: 2rem;
+    padding: 30px;
+  }
+
+  #past-1 {
+    grid-area: past1;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  #past-2 {
+    grid-area: past2;
+    width: 100%;
+    place-content: center;
+  }
+
+  .past-container-pic {
+    display: grid;
+    width: 100%;
+    place-content: center;
+  }
+
+  .past-container-pic img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .past-story h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .past-story p {
+    font-size: 1.4rem;
   }
 
   .now-story {
