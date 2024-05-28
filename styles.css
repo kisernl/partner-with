@@ -516,7 +516,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr;
   box-sizing: border-box;
-  background-color: #f5ba68;
+  background-color: #f0d2a7;
   padding: 3rem;
   padding-bottom: 2rem;
 }
