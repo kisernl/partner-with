@@ -925,7 +925,7 @@
   .partner {
     display: grid;
     grid-template-columns: 1fr;
-    height: 600px;
+    min-height: 600px;
     background-color: #ffffff;
     width: 100%;
     place-content: center;
@@ -958,7 +958,8 @@
 
   #button-1,
   #button-2,
-  #button-3 {
+  #button-3,
+  #button-4 {
     width: 100%;
     place-items: center;
   }
@@ -977,12 +978,29 @@
     place-content: center;
   }
 
+  #support-div-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    place-items: center;
+  }
+
   #mailchimp-div,
   #prayer-div,
-  #support-div {
+  #support-div,
+  #contact-div {
     display: grid;
     width: 450px;
+    font-size: 1.25rem;
     place-content: center;
+    place-items: center;
+    text-align: start;
+    background-color: #e2e8f0;
+    border: #44576d solid 1px;
+  }
+
+  #support-div {
+    padding-left: 4.5rem;
   }
 
   /* modals for partner buttons */
