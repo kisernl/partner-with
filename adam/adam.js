@@ -46,6 +46,11 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// javascript to auto click #accordion-1 - moved to inline on index page
+// function triggerBtnClick() {
+//   document.getElementById("accordion-1").click();
+// }
+
 // javascript for buttons
 
 document
@@ -83,3 +88,5 @@ function supportToggle() {
     supportDiv.style.display = "none"; // Hide the div
   }
 }
+
+// modal button script for partner buttons

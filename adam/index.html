@@ -11,13 +11,21 @@
       src="https://kit.fontawesome.com/395e51313e.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Define the triggerBtnClick function
+      function triggerBtnClick() {
+        document.getElementById("accordion-1").click();
+      }
+    </script>
 
     <title>Adam S</title>
   </head>
-  <body>
+  <body onload="triggerBtnClick()">
     <main class="adam-landing-page">
       <nav class="navbar">
         <div class="navbar-container">
+          <div class="empty"></div>
+          <!-- empty div to format logo in ipad mode -->
           <div class="logo" href="#home">
             <img src="adam_img/AdamS-Logo-WhtBlu.png" alt="Adam S logo image" />
           </div>
@@ -87,13 +95,14 @@
       <div class="spacer"></div>
       <section class="past-story">
         <div class="past-container">
-          <div class="past-container-pic">
+          <div class="past-container-pic" id="past-1">
             <img
               src="adam_img/AdamS_How_We_Got_Here.png"
               alt="personal journey infographic"
+              id="timeline-map"
             />
           </div>
-          <div class="past-description">
+          <div class="past-description" id="past-2">
             <h1>How We Got Here</h1>
             <p>
               "A person’s steps are established by the LORD, and he takes
@@ -109,10 +118,10 @@
       <div class="spacer"></div>
       <section class="now-story">
         <div class="now-container">
-          <div class="now-description">
+          <div class="now-description" id="now-1">
             <h1>What God Is Doing</h1>
           </div>
-          <div class="info-cards">
+          <div class="info-cards" id="now-2">
             <div class="info-card-container">
               <div class="slider-wrapper">
                 <button class="slide-arrow" id="slide-arrow-prev">
@@ -147,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="now-description">
+          <div class="now-description" id="now-3">
             <p>
               "LORD, there is no one like you. You are great; your name is great
               in power. Who should not fear you, King of the nations? It is what
@@ -159,12 +168,12 @@
         </div>
       </section>
       <!-- cut these spacer divs (at both ends of this section below) because I couldn't get them to disappear -->
-      <!-- <div class="spacer" id="portrait-top"></div> -->
+      <div class="spacer"></div>
       <section class="potrait-cards">
         <div class="portrait-cards-container">
           <h1>Where Conversations Happen</h1>
           <!-- clinic pictures -->
-          <div class="pictures">
+          <div class="pictures" id="clinic">
             <div class="picture" data-picture="clinic-cover">
               <img src="adam_img/Clinic_1.png" alt="clinic title" />
             </div>
@@ -179,7 +188,7 @@
             </div>
           </div>
           <!-- Hope Family Center pictures -->
-          <div class="pictures">
+          <div class="pictures" id="hfc">
             <div class="picture" data-picture="hfc-cover">
               <img src="adam_img/Family_1.png" alt="hfc cover" />
             </div>
@@ -195,10 +204,13 @@
           </div>
         </div>
       </section>
+      <div class="spacer"></div>
       <!-- <div class="spacer" id="potrait-bottom"></div> -->
       <section class="invitation">
-        <div class="invitation-container">
+        <div class="invitation-title" id="invite-1">
           <h1>Why Are We Seeking Ministry Partners?</h1>
+        </div>
+        <div class="invitation-copy" id="invite-2">
           <p>
             In short, this is how God designed the body of Christ to function.
             <br />
@@ -210,8 +222,9 @@
             understanding of how he chooses to provide.
           </p>
         </div>
-        <div class="accordion-container">
-          <button class="accordion">Ephesians 6:19-20</button>
+
+        <div class="accordion-container" id="invite-3">
+          <button class="accordion" id="accordion-1">Ephesians 6:19-20</button>
           <div class="panel">
             <p>
               <i
@@ -247,182 +260,185 @@
           </div>
         </div>
       </section>
+      <div class="spacer"></div>
       <section class="partner" id="partner">
         <div class="partner-container">
           <h2>Ways You Can Partner</h2>
         </div>
-      </section>
-      <section class="partner-buttons">
-        <div id="button-1">
-          <button class="button-81" id="mailchimp-button" role="button">
-            Newsletter
-          </button>
-        </div>
-        <div id="mailchimp-div" style="display: none">
-          <div id="mc_embed_shell">
-            <link
-              href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
-              rel="stylesheet"
-              type="text/css"
-            />
-            <style type="text/css">
-              #mc_embed_signup {
-                background: #fff;
-                clear: left;
-                font: 14px Helvetica, Arial, sans-serif;
-                width: 100%;
-                padding: 1rem;
-                box-sizing: border-box;
-              }
 
-              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        <div class="partner-buttons">
+          <div id="button-1">
+            <button class="button-81" id="mailchimp-button" role="button">
+              Newsletter
+            </button>
+          </div>
+          <div id="mailchimp-div" style="display: none">
+            <div id="mc_embed_shell">
+              <link
+                href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+                rel="stylesheet"
+                type="text/css"
+              />
+              <style type="text/css">
+                #mc_embed_signup {
+                  background: #fff;
+                  clear: left;
+                  font: 14px Helvetica, Arial, sans-serif;
+                  width: 100%;
+                  padding: 1rem;
+                  box-sizing: border-box;
+                }
+
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-              <form
-                action="https://womenshope.us18.list-manage.com/subscribe/post?u=287884b7e996f80ceab526fa8&amp;id=255863ea30&amp;f_id=0072c9e0f0"
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="validate"
-                target="_blank"
-              >
-                <div id="mc_embed_signup_scroll">
-                  <h2>Join the Newsletter!</h2>
-                  <!-- <div class="indicates-required">
+              </style>
+              <div id="mc_embed_signup">
+                <form
+                  action="https://womenshope.us18.list-manage.com/subscribe/post?u=287884b7e996f80ceab526fa8&amp;id=255863ea30&amp;f_id=0072c9e0f0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_blank"
+                >
+                  <div id="mc_embed_signup_scroll">
+                    <h2>Join the Newsletter!</h2>
+                    <!-- <div class="indicates-required">
                     <span class="asterisk">*</span> indicates required
                   </div> -->
-                  <div class="mc-field-group">
-                    <label for="mce-FNAME"
-                      >First Name <span class="asterisk"></span></label
-                    ><input
-                      type="text"
-                      name="FNAME"
-                      class="required text"
-                      id="mce-FNAME"
-                      required=""
-                      value=""
-                    />
-                  </div>
-                  <div class="mc-field-group">
-                    <label for="mce-LNAME"
-                      >Last Name <span class="asterisk"></span></label
-                    ><input
-                      type="text"
-                      name="LNAME"
-                      class="required text"
-                      id="mce-LNAME"
-                      required=""
-                      value=""
-                    />
-                  </div>
-                  <div class="mc-field-group">
-                    <label for="mce-EMAIL"
-                      >Email Address <span class="asterisk"></span></label
-                    ><input
-                      type="email"
-                      name="EMAIL"
-                      class="required email"
-                      id="mce-EMAIL"
-                      required=""
-                      value=""
-                    />
-                  </div>
-                  <div id="mce-responses" class="clear">
+                    <div class="mc-field-group">
+                      <label for="mce-FNAME"
+                        >First Name <span class="asterisk"></span></label
+                      ><input
+                        type="text"
+                        name="FNAME"
+                        class="required text"
+                        id="mce-FNAME"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-LNAME"
+                        >Last Name <span class="asterisk"></span></label
+                      ><input
+                        type="text"
+                        name="LNAME"
+                        class="required text"
+                        id="mce-LNAME"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL"
+                        >Email Address <span class="asterisk"></span></label
+                      ><input
+                        type="email"
+                        name="EMAIL"
+                        class="required email"
+                        id="mce-EMAIL"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div
+                        class="response"
+                        id="mce-error-response"
+                        style="display: none"
+                      ></div>
+                      <div
+                        class="response"
+                        id="mce-success-response"
+                        style="display: none"
+                      ></div>
+                    </div>
                     <div
-                      class="response"
-                      id="mce-error-response"
-                      style="display: none"
-                    ></div>
-                    <div
-                      class="response"
-                      id="mce-success-response"
-                      style="display: none"
-                    ></div>
+                      aria-hidden="true"
+                      style="position: absolute; left: -5000px"
+                    >
+                      <input
+                        type="text"
+                        name="b_287884b7e996f80ceab526fa8_255863ea30"
+                        tabindex="-1"
+                        value=""
+                      />
+                    </div>
+                    <div class="clear">
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="button"
+                        value="Subscribe"
+                      />
+                    </div>
                   </div>
-                  <div
-                    aria-hidden="true"
-                    style="position: absolute; left: -5000px"
-                  >
-                    <input
-                      type="text"
-                      name="b_287884b7e996f80ceab526fa8_255863ea30"
-                      tabindex="-1"
-                      value=""
-                    />
-                  </div>
-                  <div class="clear">
-                    <input
-                      type="submit"
-                      name="subscribe"
-                      id="mc-embedded-subscribe"
-                      class="button"
-                      value="Subscribe"
-                    />
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
+              <script
+                type="text/javascript"
+                src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+              ></script>
+              <script type="text/javascript">
+                (function ($) {
+                  window.fnames = new Array();
+                  window.ftypes = new Array();
+                  fnames[1] = "FNAME";
+                  ftypes[1] = "text";
+                  fnames[2] = "LNAME";
+                  ftypes[2] = "text";
+                  fnames[0] = "EMAIL";
+                  ftypes[0] = "email";
+                  fnames[5] = "BIRTHDAY";
+                  ftypes[5] = "birthday";
+                  fnames[3] = "ADDRESS";
+                  ftypes[3] = "address";
+                  fnames[4] = "PHONE";
+                  ftypes[4] = "phone";
+                })(jQuery);
+                var $mcj = jQuery.noConflict(true);
+              </script>
             </div>
-            <script
-              type="text/javascript"
-              src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-            ></script>
-            <script type="text/javascript">
-              (function ($) {
-                window.fnames = new Array();
-                window.ftypes = new Array();
-                fnames[1] = "FNAME";
-                ftypes[1] = "text";
-                fnames[2] = "LNAME";
-                ftypes[2] = "text";
-                fnames[0] = "EMAIL";
-                ftypes[0] = "email";
-                fnames[5] = "BIRTHDAY";
-                ftypes[5] = "birthday";
-                fnames[3] = "ADDRESS";
-                ftypes[3] = "address";
-                fnames[4] = "PHONE";
-                ftypes[4] = "phone";
-              })(jQuery);
-              var $mcj = jQuery.noConflict(true);
-            </script>
           </div>
-        </div>
-        <div id="button-2">
-          <button class="button-81" id="prayer-button" role="button">
-            Prayer
-          </button>
-        </div>
-        <div id="prayer-div" style="display: none">
-          <!-- <p> -->
-          <ul>
-            <li>
-              For the Spirit to prepare the hearts and minds of the women and
-              men who come through our doors; that they would decide to choose
-              life if abortion vulnerable
-            </li>
-            <li>
-              That Jesus would be proclaimed clearly and tangibly, in word and
-              deed, and that truth would be spoken in love by every
-              representative of Women’s Hope
-            </li>
-            <li>
-              That salvation would come to those who do not yet acknowledge
-              Jesus as Lord and Savior
-            </li>
-            <li>
-              That God would continue graciously providing for the various needs
-              of our family
-            </li>
-          </ul>
-          <!-- </p> -->
-        </div>
-
-        <button class="button-81" id="support-button" role="button">
-          Support
-        </button>
-        <div id="support-div-container">
+          <div id="button-2">
+            <button class="button-81" id="prayer-button" role="button">
+              Prayer
+            </button>
+          </div>
+          <div id="prayer-div" style="display: none">
+            <!-- <p> -->
+            <ul>
+              <li>
+                For the Spirit to prepare the hearts and minds of the women and
+                men who come through our doors; that they would decide to choose
+                life if abortion vulnerable
+              </li>
+              <li>
+                That Jesus would be proclaimed clearly and tangibly, in word and
+                deed, and that truth would be spoken in love by every
+                representative of Women’s Hope
+              </li>
+              <li>
+                That salvation would come to those who do not yet acknowledge
+                Jesus as Lord and Savior
+              </li>
+              <li>
+                That God would continue graciously providing for the various
+                needs of our family
+              </li>
+            </ul>
+            <!-- </p> -->
+          </div>
+          <div class="button-3">
+            <button class="button-81" id="support-button" role="button">
+              Support
+            </button>
+          </div>
+          <!-- <div id="support-div-container"> -->
           <div id="support-div" style="display: none">
+            <br />
             <script
               type="text/javascript"
               id="bloomerangForm158046208"
@@ -1712,9 +1728,17 @@
                 startBloomerangLoad();
 </script></pre>
           </div>
+          <!-- </div> -->
+          <div id="button-4">
+            <a href="mailto:adam@nospammers.com" target="_blank">
+              <button class="button-81" id="contact-button" role="button">
+                Contact
+              </button>
+            </a>
+          </div>
         </div>
       </section>
-      <section class="button-out"></section>
+      <div class="spacer"></div>
     </main>
     <footer class="footer">
       <div class="footer-container">
