@@ -410,7 +410,7 @@
   display: grid;
   grid-template-columns: 1fr;
   color: #44576d;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
   padding: 0.25rem;
   padding-bottom: 0;
 }
@@ -425,7 +425,7 @@
 /* partner buttons */
 .partner-buttons {
   color: #44576d;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 
 .partner-buttons,

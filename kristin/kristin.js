@@ -53,3 +53,40 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 };
+
+// partner buttons
+document
+  .querySelector("#newsletter-button")
+  .addEventListener("click", newsletterToggle);
+function newsletterToggle() {
+  const newsletterDiv = document.getElementById("newsletter-div");
+  if (newsletterDiv.style.display === "none") {
+    newsletterDiv.style.display = "block"; // Show the div
+  } else {
+    newsletterDiv.style.display = "none"; // Hide the div
+  }
+}
+
+document
+  .querySelector("#support-button")
+  .addEventListener("click", supportToggle);
+function supportToggle() {
+  const supportDiv = document.getElementById("support-div");
+  if (supportDiv.style.display === "none") {
+    supportDiv.style.display = "block"; // Show the div
+  } else {
+    supportDiv.style.display = "none"; // Hide the div
+  }
+}
+
+document
+  .querySelector("#contact-button")
+  .addEventListener("click", contactToggle);
+function contactToggle() {
+  const contactDiv = document.getElementById("contact-div");
+  if (contactDiv.style.display === "none") {
+    contactDiv.style.display = "block"; // Show the div
+  } else {
+    contactDiv.style.display = "none"; // Hide the div
+  }
+}
