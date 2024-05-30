@@ -410,9 +410,9 @@
   display: grid;
   grid-template-columns: 1fr;
   color: #44576d;
-  background-color: #ffffff;
+  background-color: #e2e8f0;
   padding: 0.25rem;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 .partner-container {
@@ -425,7 +425,7 @@
 /* partner buttons */
 .partner-buttons {
   color: #44576d;
-  background-color: #ffffff;
+  background-color: #e2e8f0;
 }
 
 .partner-buttons,
@@ -476,9 +476,11 @@
 
 #support-div {
   padding: 1.5rem;
+  padding-left: 2rem;
   background-color: #ffffff;
   box-sizing: border-box;
   width: 100%;
+  place-items: center;
 }
 
 .button-out {
