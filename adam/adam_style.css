@@ -455,3 +455,29 @@ blockquote {
   transition-duration: 400ms;
   transition-property: width, left;
 }
+
+#mailchimp-div {
+  width: 100%;
+}
+
+#support-div {
+  padding: 1.5rem;
+  padding-left: 2rem;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+  place-items: center;
+}
+
+footer,
+.footer-container {
+  display: grid;
+  height: 4rem;
+  background-color: #44576d;
+  place-items: center;
+}
+
+.footer-container img {
+  width: 100%;
+  background-color: #44576d;
+}
