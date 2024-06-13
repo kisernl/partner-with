@@ -497,6 +497,12 @@
   grid-gap: 0;
 }
 
+.work-card-container img {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
 .footer-container {
   display: grid;
   height: 5rem;

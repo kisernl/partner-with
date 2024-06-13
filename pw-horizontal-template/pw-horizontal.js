@@ -6,6 +6,8 @@ document.addEventListener("wheel", function (ev) {
   }
 });
 
+// buttons scripts to scroll blocks
+
 document.getElementById("go-to-4").addEventListener("click", function (event) {
   event.preventDefault(); // Prevent the default anchor link behavior
 

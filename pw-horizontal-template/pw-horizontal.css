@@ -101,3 +101,22 @@ body {
 #block6 {
   background-color: thistle;
 }
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 2s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.img-container {
+  width: 75vw;
+  height: auto;
+  justify-content: center;
+}
