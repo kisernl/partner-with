@@ -1,5 +1,3 @@
-v2.0
-
 First PARTNERwith site - Adam Schrimsher
 Fatherhood Director at WHMC
 

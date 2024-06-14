@@ -1,284 +1,277 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light" />
-    <!-- Pico.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
-    />
-    <link rel="stylesheet" href="adam_style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="adam.css" />
+    <script
+      src="https://kit.fontawesome.com/395e51313e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Define the triggerBtnClick function
+      function triggerBtnClick() {
+        document.getElementById("accordion-1").click();
+      }
+    </script>
+
     <title>Adam S</title>
   </head>
-  <body>
-    <main class="container">
-      <!-- Header -->
-      <section class="block" id="profile">
-        <div class="logo">
-          <img src="img/adam-logo-canva.png" />
+  <body onload="triggerBtnClick()">
+    <main class="adam-landing-page">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="empty"></div>
+          <!-- empty div to format logo in ipad mode -->
+          <div class="logo" href="#home">
+            <img src="adam_img/AdamS-Logo-WhtBlu.png" alt="Adam S logo image" />
+          </div>
         </div>
-        <div class="profile-pic">
-          <img src="img/adam_profile_qr.png" alt="profile picture" />
-        </div>
-        <br />
-        <div id="profile-description">
-          <h2>Fatherhood Director</h2>
-          <p>Women's Hope Medical Clinic</p>
-        </div>
-        <br />
-        <div class="partner-button">
-          <a href="#partner-block" id="link-to-partner">
-            <img src="img/as_partner4.png" alt="partner button" />
-          </a>
+      </nav>
+      <section class="hero">
+        <div class="hero-container">
+          <div id="hero-1">
+            <img
+              src="adam_img/AdamS-profile-QR-750-transparent.png"
+              alt="Adam S Profile Photo and QR Code"
+            />
+            <a href="#partner" id="link-to-partner">
+              <img
+                src="adam_img/AdamS-partner-button-arrow.png"
+                alt="Adam S Profile Photo and QR Code"
+              />
+            </a>
+          </div>
+          <div id="hero-2">
+            <p>
+              <i
+                >"The lone father is not a strong father. Fathering is a
+                difficult and perilous journey and is done well with the help of
+                other men."</i
+              >
+              – John L. Hart
+            </p>
+          </div>
+          <div class="hero-description" id="hero-3">
+            <h1>Fatherhood Director</h1>
+            <h2>Women’s Hope Medical Clinic</h2>
+            <p>
+              <i
+                >Women’s Hope Medical Clinic exists to glorify God through
+                sharing the Gospel of Christ while empowering individuals to
+                make healthy, Godly decisions for life.</i
+              >
+            </p>
+          </div>
         </div>
       </section>
-      <!-- ./ Header -->
-      <!-- Who We Are -->
-      <section class="block" id="who-we-are" style="position: relative">
-        <div class="card">
-          <div class="content">
-            <div class="front">
-              <div class="family-pic">
-                <img src="img/adam-family_pic.png" alt="family photo" />
-              </div>
-            </div>
-            <div class="back">
-              <div class="who-we-are-description">
-                <p>
-                  Deana and I have enjoyed 18 years of grace-filled marriage.
-                  Libby is our soon-to-be 15-year-old daughter and is a
-                  theater-loving rising freshman at Opelika High. Caleb is our
-                  wrestling enthusiast son, who will be a seventh-grade
-                  percussionist in the OMS band. Deana has spent the past two
-                  years loving on toddlers at FBCO's Bright Beginnings, but
-                  she's now in the process of getting back into public education
-                  after a 15-year hiatus. We are all members of First Pres
-                  Opelika.
-                </p>
-              </div>
+      <div class="spacer"></div>
+      <section class="about">
+        <div class="about-img">
+          <img src="adam_img/AdamS_Who_We_Are.png" alt="Family Photo" />
+        </div>
+        <div class="about-container">
+          <div class="about-description">
+            <!-- Verse or Quote -->
+            <div class="about-copy">
+              <h1>Who We Are</h1>
+              <p>
+                Deana and I have enjoyed 18 years of grace-filled marriage.
+                Libby is our soon-to-be 15-year-old daughter and is a
+                theater-loving rising freshman at Opelika High. Caleb is our
+                wrestling enthusiast son, who will be a seventh-grade
+                percussionist in the OMS band. Deana has spent the past two
+                years loving on toddlers at FBCO's Bright Beginnings, but she's
+                now in the process of getting back into public education after a
+                15-year hiatus. We are all members of First Pres Opelika.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- How We Got Here -->
-      <section class="block" id="journey-block">
-        <div class="our-journey-pic">
-          <img
-            src="img/adam-our-journey-boxes.png"
-            alt="our journey timeline"
-          />
-        </div>
-        <br />
-        <div class="journey-description">
-          <div
-            id="modal-verse-1"
-            data-target="modal-journey-verse-1"
-            onclick="toggleModal(event)"
-          >
-            <u>Psalm 37:23-26</u>
+      <div class="spacer"></div>
+      <section class="past-story">
+        <div class="past-container">
+          <div class="past-container-pic" id="past-1">
+            <img
+              src="adam_img/AdamS_How_We_Got_Here.png"
+              alt="personal journey infographic"
+              id="timeline-map"
+            />
           </div>
-
-          <dialog id="modal-journey-verse-1">
-            <article>
-              <header>
-                <button
-                  aria-label="Close"
-                  rel="prev"
-                  data-target="modal-journey-verse-1"
-                  onclick="toggleModal(event)"
-                ></button>
-              </header>
-              <blockquote>
-                "A person’s steps are established by the LORD, and he takes
-                pleasure in his way. Though he falls, he will not be
-                overwhelmed, because the LORD supports him with his hand. I have
-                been young and now I am old, yet I have not seen the righteous
-                abandoned or his children begging for bread. He is always
-                generous, always lending, and his children are a blessing."
-              </blockquote>
-              <cite>Psalm 37:23-26</cite>
-            </article>
-          </dialog>
+          <div class="past-description" id="past-2">
+            <h1>How We Got Here</h1>
+            <p>
+              "A person’s steps are established by the LORD, and he takes
+              pleasure in his way. Though he falls, he will not be overwhelmed,
+              because the LORD supports him with his hand. I have been young and
+              now I am old, yet I have not seen the righteous abandoned or his
+              children begging for bread. He is always generous, always lending,
+              and his children are a blessing." Psalm 37:23-26
+            </p>
+          </div>
         </div>
       </section>
+      <div class="spacer"></div>
+      <section class="now-story">
+        <div class="now-container">
+          <div class="now-description" id="now-1">
+            <h1>What God Is Doing</h1>
+          </div>
+          <div class="info-cards" id="now-2">
+            <div class="info-card-container">
+              <div class="slider-wrapper">
+                <button class="slide-arrow" id="slide-arrow-prev">
+                  &#8249;
+                </button>
+                <button class="slide-arrow" id="slide-arrow-next">
+                  &#8250;
+                </button>
+                <ul class="slides-container" id="slides-container">
+                  <li class="slide">
+                    <img src="adam_img/AdamS_What_God_is_Doing_Stats.png" />
+                  </li>
+                  <li class="slide">
+                    <img src="adam_img/AdamS_What_God_is_Doing_map.png" />
+                  </li>
+                  <li class="slide">
+                    <img src="adam_img/AdamS_What_God_is_Doing_Circle.png" />
+                  </li>
+                </ul>
+              </div>
+              <!-- above for desktop and below for mobile -->
+              <div class="info-card" id="slide1">
+                <img src="adam_img/AdamS_What_God_is_Doing_Stats.png" />
+              </div>
 
-      <!-- Now Block -->
+              <div class="info-card" id="slide2">
+                <img src="adam_img/AdamS_What_God_is_Doing_map.png" />
+              </div>
 
-      <section class="block" id="now-block">
-        <div class="fatherhood-quote">
-          <p>
-            "The lone father is not a strong father. Fathering is a difficult
-            and perilous journey and is done well with the help of other men."
-            <br /><b>John L. Hart</b>
-          </p>
-        </div>
-        <div id="modal-info">
-          <!-- info modal 1 -->
-          <button
-            id="modal-1"
-            class="secondary"
-            data-target="modal-advocate"
-            onclick="toggleModal(event)"
-          >
-            Advocating for the Unborn
-          </button>
-
-          <dialog id="modal-advocate">
-            <article>
-              <header>
-                <button
-                  aria-label="Close"
-                  rel="prev"
-                  data-target="modal-advocate"
-                  onclick="toggleModal(event)"
-                ></button>
-              </header>
-              <img src="img/advocating.png" alt="advocating" />
-            </article>
-          </dialog>
-
-          <!-- info modal 2 -->
-          <button
-            id="modal-2"
-            class="secondary"
-            data-target="modal-father"
-            onclick="toggleModal(event)"
-          >
-            Parenting Program
-          </button>
-
-          <dialog id="modal-father">
-            <article>
-              <header>
-                <button
-                  aria-label="Close"
-                  rel="prev"
-                  data-target="modal-father"
-                  onclick="toggleModal(event)"
-                ></button>
-              </header>
-              <img src="img/parenting-program.png" alt="father map" />
-            </article>
-          </dialog>
-
-          <!-- info modal 3 -->
-          <button
-            id="modal-3"
-            class="secondary"
-            data-target="modal-circle"
-            onclick="toggleModal(event)"
-          >
-            Discipling Dads
-          </button>
-          <dialog id="modal-circle">
-            <article>
-              <header>
-                <button
-                  aria-label="Close"
-                  rel="prev"
-                  data-target="modal-circle"
-                  onclick="toggleModal(event)"
-                ></button>
-              </header>
-              <img src="img/discipling-dads.png" alt="center-circle" />
-            </article>
-          </dialog>
-        </div>
-        <br />
-        <div class="now-description"></div>
-        <div class="now-verse">
-          <p>
-            "LORD, there is no one like you. You are great; your name is great
-            in power. Who should not fear you, King of the nations? It is what
-            you deserve. For among all the wise people of the nations and among
-            all their kingdoms, there is no one like you."<br />
-            <b>Jeremiah 10:6-7</b>
-          </p>
+              <div class="info-card" id="slide3">
+                <img src="adam_img/AdamS_What_God_is_Doing_Circle.png" />
+              </div>
+            </div>
+          </div>
+          <div class="now-description" id="now-3">
+            <p>
+              "LORD, there is no one like you. You are great; your name is great
+              in power. Who should not fear you, King of the nations? It is what
+              you deserve. For among all the wise people of the nations and
+              among all their kingdoms, there is no one like you." Jeremiah
+              10:6-7
+            </p>
+          </div>
         </div>
       </section>
-      <section class="block" id="potrait-cards">
+      <!-- cut these spacer divs (at both ends of this section below) because I couldn't get them to disappear -->
+      <div class="spacer"></div>
+      <section class="potrait-cards">
         <div class="portrait-cards-container">
+          <h1>Where Conversations Happen</h1>
           <!-- clinic pictures -->
           <div class="pictures" id="clinic">
             <div class="picture" data-picture="clinic-cover">
-              <img src="img/whmc_clinic_title.png" alt="clinic title" />
+              <img src="adam_img/Clinic_1.png" alt="clinic title" />
             </div>
             <div class="picture" data-picture="clinic lobby">
-              <img src="img/clinic2.png" alt="clinic lobby" />
+              <img src="adam_img/Clinic_2.png" alt="clinic lobby" />
             </div>
             <div class="picture" data-picture="clinic sonogram">
-              <img src="img/clinic3.png" alt="clinic sonogram" />
+              <img src="adam_img/Clinic_3.png" alt="clinic sonogram" />
             </div>
             <div class="picture" data-picture="clinic room">
-              <img src="img/clinic4.png" alt="clinic room" />
+              <img src="adam_img/Clinic_4.png" alt="clinic room" />
             </div>
           </div>
+          <!-- Hope Family Center pictures -->
           <div class="pictures" id="hfc">
             <div class="picture" data-picture="hfc-cover">
-              <img src="img/whmc_hfc_title.png" alt="hfc title" />
+              <img src="adam_img/Family_1.png" alt="hfc cover" />
             </div>
-            <div class="picture" data-picture="clinic lobby">
-              <img src="img/family2.png" alt="hfc lobby" />
+            <div class="picture" data-picture="hfc lobby">
+              <img src="adam_img/Family_2.png" alt="hfc lobby" />
             </div>
-            <div class="picture" data-picture="clinic sonogram">
-              <img src="img/family3.png" alt="boutique" />
+            <div class="picture" data-picture="hfc boutique">
+              <img src="adam_img/Family_3.png" alt="hfc boutique" />
             </div>
-            <div class="picture" data-picture="clinic room">
-              <img src="img/family4.png" alt="man cave" />
+            <div class="picture" data-picture="hfc man cave">
+              <img src="adam_img/Family_4.png" alt="hfc man cave" />
             </div>
           </div>
         </div>
       </section>
-      <section class="block" id="why-partner">
-        <div class="why-partner-description">
-          <h2>Seeking Ministry Partners</h2>
+      <div class="spacer"></div>
+      <!-- <div class="spacer" id="potrait-bottom"></div> -->
+      <section class="invitation">
+        <div class="invitation-title" id="invite-1">
+          <h1>Why Are We Seeking Ministry Partners?</h1>
+        </div>
+        <div class="invitation-copy" id="invite-2">
           <p>
+            In short, this is how God designed the body of Christ to function.
+            <br />
+            <br />
+
             As it became clear that God was calling our family to Women's Hope,
             a funny thing happened: we began to see that this ministry position
             would force us to depend more fully on God and increase our
             understanding of how he chooses to provide.
           </p>
         </div>
-        <div id="accordion">
-          <details open>
-            <summary>Ephesians 6:19-20</summary>
-            <blockquote>
-              Pray also for me, that the message may be given to me when I open
-              my mouth to make known with boldness the mystery of the gospel.
-              For this I am an ambassador in chains. Pray that I might be bold
-              enough to speak about it as I should.
-            </blockquote>
-          </details>
-          <details>
-            <summary>Colossians 4:2-4</summary>
-            <blockquote>
-              Devote yourselves to prayer; stay alert in it with thanksgiving.
-              At the same time, pray also for us that God may open a door to us
-              for the word, to speak the mystery of Christ, for which I am in
-              chains, so that I may make it known as I should.
-            </blockquote>
-          </details>
-          <details>
-            <summary>Philippians 4:17</summary>
-            <blockquote>
-              Not that I seek the gift, but I seek the profit that is increasing
-              to your account.
-            </blockquote>
-          </details>
+
+        <div class="accordion-container" id="invite-3">
+          <button class="accordion" id="accordion-1">Ephesians 6:19-20</button>
+          <div class="panel">
+            <p>
+              <i
+                >Pray also for me, that the message may be given to me when I
+                open my mouth to make known with boldness the mystery of the
+                gospel. For this I am an ambassador in chains. Pray that I might
+                be bold enough to speak about it as I should.</i
+              >
+            </p>
+          </div>
+
+          <button class="accordion">Colossians 4:2-4</button>
+          <div class="panel">
+            <p>
+              <i
+                >Devote yourselves to prayer; stay alert in it with
+                thanksgiving. At the same time, pray also for us that God may
+                open a door to us for the word, to speak the mystery of Christ,
+                for which I am in chains, so that I may make it known as I
+                should.</i
+              >
+            </p>
+          </div>
+
+          <button class="accordion">Philippians 4:17</button>
+          <div class="panel">
+            <p>
+              <i
+                >Not that I seek the gift, but I seek the profit that is
+                increasing to your account.</i
+              >
+            </p>
+          </div>
         </div>
       </section>
-      <section class="block" id="partner-block">
+      <div class="spacer"></div>
+      <section class="partner" id="partner">
+        <div class="partner-container">
+          <h2>Ways You Can Partner</h2>
+        </div>
+
         <div class="partner-buttons">
-          <button id="mailchimp-button">Newsletter</button>
+          <div id="button-1">
+            <button class="button-81" id="mailchimp-button" role="button">
+              Newsletter
+            </button>
+          </div>
           <div id="mailchimp-div" style="display: none">
             <div id="mc_embed_shell">
               <link
@@ -288,7 +281,7 @@
               />
               <style type="text/css">
                 #mc_embed_signup {
-                  background: transparent;
+                  background: #fff;
                   clear: left;
                   font: 14px Helvetica, Arial, sans-serif;
                   width: 100%;
@@ -409,12 +402,13 @@
               </script>
             </div>
           </div>
-          <br />
-          <button id="prayer-button">Prayer</button>
-
+          <div id="button-2">
+            <button class="button-81" id="prayer-button" role="button">
+              Prayer
+            </button>
+          </div>
           <div id="prayer-div" style="display: none">
             <!-- <p> -->
-            <br />
             <ul>
               <li>
                 For the Spirit to prepare the hearts and minds of the women and
@@ -437,10 +431,12 @@
             </ul>
             <!-- </p> -->
           </div>
-          <br />
-          <button id="support-button" role="button">Support</button>
-          <!-- bloomerang support form embed -->
-
+          <div class="button-3">
+            <button class="button-81" id="support-button" role="button">
+              Support
+            </button>
+          </div>
+          <!-- <div id="support-div-container"> -->
           <div id="support-div" style="display: none">
             <br />
             <script
@@ -1732,24 +1728,30 @@
                 startBloomerangLoad();
 </script></pre>
           </div>
-          <br />
-          <a href="mailto:adam@womenshope.org" target="_blank">
-            <button>Contact</button></a
-          >
+          <!-- </div> -->
+          <div id="button-4">
+            <a href="mailto:adam@nospammers.com" target="_blank">
+              <button class="button-81" id="contact-button" role="button">
+                Contact
+              </button>
+            </a>
+          </div>
         </div>
       </section>
+      <div class="spacer"></div>
     </main>
     <footer class="footer">
       <div class="footer-container">
         <a href="https://www.partnerwith.net" target="_blank">
           <img
-            src="img/PARTNERwith_net-banner-white-transparent.png"
+            src="adam_img/PARTNERwith_net-banner-white-transparent.png"
             alt="PARTNERwith Logo"
             class="footer-logo"
           />
         </a>
       </div>
     </footer>
-    <script type="module" src="/adam/adam.js"></script>
+
+    <script type="module" src="/adam1/adam.js"></script>
   </body>
 </html>

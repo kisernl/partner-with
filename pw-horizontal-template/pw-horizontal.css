@@ -1,0 +1,122 @@
+body {
+  font-family: Roboto, Arial, Helvetica, Sans-Serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden; /* Prevent the body from scrolling */
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar container */
+  align-items: center;
+  width: 100%;
+  height: 100px; /* Set navbar height */
+  background-color: transparent;
+  position: fixed; /* Fix the navbar on top */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left edge */
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the images */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for the container */
+  padding: 0 20px; /* Add some padding to the container */
+}
+
+.navbar-image {
+  height: 80px; /* Set the height of the images */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.left {
+  align-self: flex-start; /* Align to the start of the flex container */
+}
+
+.right {
+  align-self: flex-end; /* Align to the end of the flex container */
+}
+
+.horizontal-content {
+  width: 100%;
+  overflow: hidden; /* Hide vertical scrollbar */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Ensure body takes full height */
+  align-content: center;
+  background-color: #dfebf6;
+}
+
+#scrollableElement {
+  display: flex;
+  /* padding: 2px; */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Enable horizontal scrolling & hide scrollbar */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.block-container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  /* margin-left: 10vw;
+    margin-right: 10vw; */
+}
+
+#block1,
+#block2,
+#block3,
+#block4,
+#block5,
+#block6 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-size: 3rem;
+}
+
+#block1 {
+  background-color: lightcoral;
+}
+#block2 {
+  background-color: lightseagreen;
+}
+#block3 {
+  background-color: lightblue;
+}
+#block4 {
+  background-color: palegoldenrod;
+}
+#block5 {
+  background-color: palegreen;
+}
+#block6 {
+  background-color: thistle;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 2s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.img-container {
+  width: 75vw;
+  height: auto;
+  justify-content: center;
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: Roboto, Arial, Helvetica, Sans-Serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden; /* Prevent the body from scrolling */
+  margin: 0;
+}
+
+.horizontal-content {
+  width: 100%;
+  overflow: hidden; /* Hide vertical scrollbar */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Ensure body takes full height */
+  align-content: center;
+  background-color: #dfebf6;
+}
+
+#scrollableElement {
+  display: flex;
+  /* padding: 2px; */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Enable horizontal scrolling & hide scrollbar */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.block-container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  /* margin-left: 10vw;
+  margin-right: 10vw; */
+}
+
+#block1,
+#block2,
+#block3,
+#block4,
+#block5,
+#block6 {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-size: 3rem;
+}
+
+#block1 {
+  background-color: lightcoral;
+}
+#block2 {
+  background-color: lightseagreen;
+}
+#block3 {
+  background-color: lightblue;
+}
+#block4 {
+  background-color: palegoldenrod;
+}
+#block5 {
+  background-color: palegreen;
+}
+#block6 {
+  background-color: thistle;
+}

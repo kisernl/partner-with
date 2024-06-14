@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scrolling on Vertical Scroll</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="horizontal.css" />
+    <script
+      src="https://kit.fontawesome.com/395e51313e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="horizontal-content">
+      <div id="scrollableElement">
+        <div class="block-container">
+          <div class="block-container">
+            <div id="block1">Block 1</div>
+          </div>
+          <div class="block-container">
+            <div id="block2">
+              Block 2<a href="#block3" id="go-to-3">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="block-container">
+            <div id="block3">
+              Block 3
+              <a href="#block4" id="go-to-4">
+                <button>Go to Block 4</button>
+              </a>
+            </div>
+          </div>
+          <div class="block-container">
+            <div id="block4">Block 4</div>
+          </div>
+          <div class="block-container">
+            <div id="block5">Block 5</div>
+          </div>
+          <div class="block-container">
+            <div id="block6">Block 6</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/horizontal/horizontal.js"></script>
+  </body>
+</html>
