@@ -26,6 +26,7 @@ const toggleModal = (event) => {
   if (!modal) return;
   modal && (modal.open ? closeModal(modal) : openModal(modal));
 };
+window.toggleModal = toggleModal;
 
 // Open modal
 const openModal = (modal) => {

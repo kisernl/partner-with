@@ -278,14 +278,171 @@
       </section>
       <section class="block" id="partner-block">
         <div class="partner-buttons">
-          <button>Newsletter</button>
+          <button id="mailchimp-button">Newsletter</button>
+          <div id="mailchimp-div" style="display: none">
+            <div id="mc_embed_shell">
+              <link
+                href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+                rel="stylesheet"
+                type="text/css"
+              />
+              <style type="text/css">
+                #mc_embed_signup {
+                  background: transparent;
+                  clear: left;
+                  font: 14px Helvetica, Arial, sans-serif;
+                  width: 100%;
+                  padding: 1rem;
+                  box-sizing: border-box;
+                }
+
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+              </style>
+              <div id="mc_embed_signup">
+                <form
+                  action="https://womenshope.us18.list-manage.com/subscribe/post?u=287884b7e996f80ceab526fa8&amp;id=255863ea30&amp;f_id=0072c9e0f0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_blank"
+                >
+                  <div id="mc_embed_signup_scroll">
+                    <h2>Join the Newsletter!</h2>
+                    <!-- <div class="indicates-required">
+                    <span class="asterisk">*</span> indicates required
+                  </div> -->
+                    <div class="mc-field-group">
+                      <label for="mce-FNAME"
+                        >First Name <span class="asterisk"></span></label
+                      ><input
+                        type="text"
+                        name="FNAME"
+                        class="required text"
+                        id="mce-FNAME"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-LNAME"
+                        >Last Name <span class="asterisk"></span></label
+                      ><input
+                        type="text"
+                        name="LNAME"
+                        class="required text"
+                        id="mce-LNAME"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL"
+                        >Email Address <span class="asterisk"></span></label
+                      ><input
+                        type="email"
+                        name="EMAIL"
+                        class="required email"
+                        id="mce-EMAIL"
+                        required=""
+                        value=""
+                      />
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div
+                        class="response"
+                        id="mce-error-response"
+                        style="display: none"
+                      ></div>
+                      <div
+                        class="response"
+                        id="mce-success-response"
+                        style="display: none"
+                      ></div>
+                    </div>
+                    <div
+                      aria-hidden="true"
+                      style="position: absolute; left: -5000px"
+                    >
+                      <input
+                        type="text"
+                        name="b_287884b7e996f80ceab526fa8_255863ea30"
+                        tabindex="-1"
+                        value=""
+                      />
+                    </div>
+                    <div class="clear">
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="button"
+                        value="Subscribe"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <script
+                type="text/javascript"
+                src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+              ></script>
+              <script type="text/javascript">
+                (function ($) {
+                  window.fnames = new Array();
+                  window.ftypes = new Array();
+                  fnames[1] = "FNAME";
+                  ftypes[1] = "text";
+                  fnames[2] = "LNAME";
+                  ftypes[2] = "text";
+                  fnames[0] = "EMAIL";
+                  ftypes[0] = "email";
+                  fnames[5] = "BIRTHDAY";
+                  ftypes[5] = "birthday";
+                  fnames[3] = "ADDRESS";
+                  ftypes[3] = "address";
+                  fnames[4] = "PHONE";
+                  ftypes[4] = "phone";
+                })(jQuery);
+                var $mcj = jQuery.noConflict(true);
+              </script>
+            </div>
+          </div>
           <br />
-          <button>Prayer</button>
+          <button id="prayer-button">Prayer</button>
+
+          <div id="prayer-div" style="display: none">
+            <!-- <p> -->
+            <br />
+            <ul>
+              <li>
+                For the Spirit to prepare the hearts and minds of the women and
+                men who come through our doors; that they would decide to choose
+                life if abortion vulnerable
+              </li>
+              <li>
+                That Jesus would be proclaimed clearly and tangibly, in word and
+                deed, and that truth would be spoken in love by every
+                representative of Women’s Hope
+              </li>
+              <li>
+                That salvation would come to those who do not yet acknowledge
+                Jesus as Lord and Savior
+              </li>
+              <li>
+                That God would continue graciously providing for the various
+                needs of our family
+              </li>
+            </ul>
+            <!-- </p> -->
+          </div>
           <br />
-          <button id="support-button">Support</button>
+          <button id="support-button" role="button">Support</button>
           <!-- bloomerang support form embed -->
 
           <div id="support-div" style="display: none">
+            <br />
             <script
               type="text/javascript"
               id="bloomerangForm158046208"
@@ -953,7 +1110,7 @@
                             function() { return Bloomerang.gRecaptchaLoaded; },
                             function() {
                                 jQuery('.section.captcha').removeAttr('style');
-                                jQuery('form.donation-form').data('captcha-id', grecaptcha.render('captcha158046208', { 'sitekey' : '6Lcr6OcUAAAAAAkPqFVxrfzLkn6v7UGE4m6YFqyh' }));
+                                jQuery('form.donation-form').data('captcha-id', grecaptcha.render('captcha158046208', { 'sitekey' : '6LffJ-UpAAAAAPtWK8VFwTVDuH3WIbHuMJPyFaAi' }));
                             },
                             true,
                             true);
@@ -1575,7 +1732,6 @@
                 startBloomerangLoad();
 </script></pre>
           </div>
-
           <br />
           <a href="mailto:adam@womenshope.org" target="_blank">
             <button>Contact</button></a
@@ -1595,5 +1751,6 @@
       </div>
     </footer>
     <script type="module" src="/adam/adam.js"></script>
+    <script type="module" src="/adam/modal.js"></script>
   </body>
 </html>

@@ -416,7 +416,7 @@ blockquote {
   place-items: center;
 }
 .partner-buttons button {
-  font-size: 18px;
+  font-size: 1.35rem;
   color: #44576d;
   font-family: inherit;
   font-weight: 500;
@@ -458,15 +458,33 @@ blockquote {
 
 #mailchimp-div {
   width: 100%;
+  background-color: transparent;
 }
 
 #support-div {
-  padding: 1.5rem;
-  padding-left: 2rem;
-  background-color: #ffffff;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  background-color: transparent;
   box-sizing: border-box;
   width: 100%;
   place-items: center;
+}
+
+#support-div input[type="radio"] {
+  appearance: radio; /* Maintain default radio appearance */
+  -webkit-appearance: radio; /* Ensure compatibility with Safari */
+  -moz-appearance: radio; /* Ensure compatibility with Firefox */
+}
+
+#support-div input[type="checkbox"] {
+  appearance: checkbox; /* Maintain default checkbox appearance */
+  -webkit-appearance: checkbox; /* Ensure compatibility with Safari */
+  -moz-appearance: checkbox; /* Ensure compatibility with Firefox */
+}
+
+#express-submit {
+  width: 50%;
+  margin-top: 5px;
 }
 
 footer,
