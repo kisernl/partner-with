@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         adam: resolve(__dirname, "adam/index.html"),
+        adam1: resolve(__dirname, "adam1/index.html"),
         kristin: resolve(__dirname, "kristin/index.html"),
         horizontal: resolve(__dirname, "horizontal/index.html"),
         horizontal_template: resolve(
