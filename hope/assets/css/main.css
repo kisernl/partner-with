@@ -3046,7 +3046,8 @@ table.alt tbody tr td {
 }
 
 .wrapper.style1 {
-  background: #20c5e7;
+  /* background: #20c5e7; */
+  background: #8a95c1;
 }
 
 .wrapper.style2 {
@@ -3525,7 +3526,8 @@ table.alt tbody tr td {
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  background: #20c5e7;
+  /* background: #20c5e7; */
+  background: #8a95c1;
   color: #ffffff;
   cursor: default;
   padding: 1rem 2rem;
