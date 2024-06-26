@@ -409,6 +409,22 @@ blockquote {
 }
 
 /* Partner Block */
+#whmc-logo {
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.whmc-mission p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.partner-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
 .partner-buttons {
   display: grid;
   grid-template-columns: 1fr;
