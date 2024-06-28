@@ -12,6 +12,7 @@ export default defineConfig({
         kristin: resolve(__dirname, "kristin/index.html"),
         hope: resolve(__dirname, "hope/index.html"),
         hopePartner: resolve(__dirname, "hope/partner.html"),
+        hopeGive: resolve(__dirname, "hope/give.html"),
         horizontal: resolve(__dirname, "horizontal/index.html"),
         horizontal_template: resolve(
           __dirname,
