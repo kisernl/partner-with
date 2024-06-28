@@ -4634,3 +4634,8 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
     margin-top: 3rem;
   }
 }
+
+.giving-form {
+  display: flex;
+  justify-content: center;
+}
