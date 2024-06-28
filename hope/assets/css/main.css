@@ -4261,10 +4261,10 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
 /* Footer */
 
 .footer-container {
-  display: grid;
+  display: flex;
   height: 5rem;
   background-color: #464666;
-  place-items: center;
+  justify-content: center;
 }
 
 .footer-container img {
@@ -4301,10 +4301,11 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
 }
 
 #footer .copyright {
-  background: #324999;
-  color: rgba(255, 255, 255, 0.4);
-  margin-top: 6rem;
-  padding: 4rem 2rem;
+  background: #464666;
+  /* color: rgba(255, 255, 255, 0.4); */
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
 }
 
 #footer .content {
@@ -4614,6 +4615,12 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
   #footer .content .icons {
     width: 100%;
   }
+}
+
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 980px) {
