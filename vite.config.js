@@ -13,7 +13,6 @@ export default defineConfig({
         hope: resolve(__dirname, "hope/index.html"),
         hopePartner: resolve(__dirname, "hope/partner.html"),
         hopeGive: resolve(__dirname, "hope/give.html"),
-        hopeBBBpdf1: resolve(__dirname, "hope/assets/BBB%20Prayer%20Guide.pdf"),
         horizontal: resolve(__dirname, "horizontal/index.html"),
         horizontal_template: resolve(
           __dirname,
