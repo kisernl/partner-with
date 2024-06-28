@@ -4260,6 +4260,18 @@ body.is-preload #banner .wrapper > .inner > .feature-icons {
 
 /* Footer */
 
+.footer-container {
+  display: grid;
+  height: 5rem;
+  background-color: #464666;
+  place-items: center;
+}
+
+.footer-container img {
+  width: 100%;
+  height: 5rem;
+}
+
 #footer {
   color: #ffffff;
   text-align: center;
