@@ -285,7 +285,8 @@ header h3:before,
 header h4:before,
 header h5:before,
 header h6:before {
-  background-color: #20c5e7;
+  /* background-color: #20c5e7; */
+  background-color: #1b93b8;
   content: "";
   display: block;
   height: 2px;
@@ -355,7 +356,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
 }
@@ -514,7 +515,8 @@ textarea {
 }
 
 a {
-  color: #20c5e7;
+  /* color: #20c5e7; */
+  color: #1b93b8;
 }
 
 a:hover {
