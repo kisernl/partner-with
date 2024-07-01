@@ -3896,7 +3896,8 @@ table.alt tbody tr td {
   transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   -webkit-overflow-scrolling: touch;
   /* background-color: #37cbe9; */
-  background-color: #464666;
+  /* background-color: #464666; */
+  background-color: #1b93b8;
   opacity: 90%;
   box-shadow: none;
   color: #ffffff;
@@ -4264,7 +4265,7 @@ body.is-navPanel-visible #navPanel {
 
 @media screen and (max-width: 1280px) {
   #banner .wrapper {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
   }
 }
 
