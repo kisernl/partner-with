@@ -230,7 +230,8 @@ body,
 input,
 select,
 textarea {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  /* font-family: "Lato", Arial, Helvetica, sans-serif; */
+  font-family: "Urbanist", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 2.15;
@@ -3538,7 +3539,10 @@ table.alt tbody tr td {
   background: #464666;
   color: #ffffff;
   cursor: default;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
+  padding: 0;
+  padding-right: 2rem;
+  padding-left: 0.5rem;
   padding-bottom: 0;
   position: relative;
   /* position: fixed; */
@@ -3563,11 +3567,14 @@ table.alt tbody tr td {
 }
 
 #header > .logo img {
-  max-width: 150px;
+  max-width: 450px;
 }
 
 #header.alt {
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 0;
+  padding-right: 2rem;
+  padding-left: 0.5rem;
   height: auto;
   display: flex;
   align-items: center;
@@ -3775,8 +3782,10 @@ table.alt tbody tr td {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    height: 60px;
-    line-height: 60px;
+    /* height: 60px; */
+    height: 96px;
+    /* line-height: 60px; */
+    line-height: 96px;
     padding: 0;
   }
 
@@ -3811,16 +3820,29 @@ table.alt tbody tr td {
     position: absolute;
     top: 0;
   }
+  #header > .logo {
+    line-height: 44px;
+    left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    height: 96px;
+  }
 }
 
 @media screen and (max-width: 736px) {
   #header {
-    height: 44px;
-    line-height: 44px;
+    max-height: 65px;
+    line-height: 65px;
+  }
+
+  #header img {
+    max-height: 65px;
+    padding: 0;
   }
 
   #header.alt {
     padding: 1.5rem 0;
+    height: 65px;
   }
 
   #header > .navPanelToggle {
@@ -3830,6 +3852,8 @@ table.alt tbody tr td {
   #header > .logo {
     line-height: 44px;
     left: 1rem;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -3843,8 +3867,8 @@ table.alt tbody tr td {
   }
 
   #header .logo img {
-    width: 75%;
-    padding: 0.5rem;
+    /* width: 75%; */
+    /* padding: 0.5rem; */
   }
 }
 
