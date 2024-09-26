@@ -1,370 +1,454 @@
 <!DOCTYPE html>
-<!--
-	Inverse by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
+<html lang="en">
   <head>
-    <title>hope</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              transparent: "transparent",
+              current: "currentColor",
+              darkBlue: "#0F609B",
+              midBlue: "#4098D7",
+              liteBlue: "#B6E0FE",
+              whiteBlue: "#DCEEFB",
+              blueGreyDark: "#334E68",
+              blueGreyMid: "#829AB1",
+              blueGreyLite: "#D9E2EC",
+              blueGreyWhite: "#F0F4F8",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Hope</title>
+
+    <meta property="og:title" content="home page" />
+    <meta property="og:type" content="website" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      property="og:image"
+      content="/hope/images/whmc_ha_combined_logo_900x250"
     />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+    <meta property="og:url" content="https://partnerwith.net/hope" />
+    <meta
+      property="og:description"
+      content="Bringing hope into the stories of women, men, and children in East Alabama"
     />
-    <script
-      src="https://kit.fontawesome.com/395e51313e.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Hope" />
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <header id="header" class="alt">
-      <!-- <div id="logo"> -->
-      <a class="logo" href="/hope/index.html">
-        <img
-          src="/hope/images/whmc_ha_combined_logo_900x250.png"
-          slt="hope logo"
-        />
-      </a>
-      <!-- </div> -->
-      <nav id="nav">
-        <ul>
-          <li class="current"><a href="/hope/index.html">Home</a></li>
-          <!-- <li>
-            <a href="#" class="dropdown">Dropdown</a>
-            <ul>
-              <li><a href="#">Option One</a></li>
-              <li><a href="#">Option Two</a></li>
-              <li><a href="#">Option Three</a></li>
-              <li>
-                <a href="#">Submenu</a>
-                <ul>
-                  <li><a href="#">Option One</a></li>
-                  <li><a href="#">Option Two</a></li>
-                  <li><a href="#">Option Three</a></li>
-                  <li><a href="#">Option Four</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li> -->
-          <li><a href="/hope/partner.html">Partner</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <!-- Banner -->
-    <div id="banner">
-      <div class="wrapper style1 special">
-        <div class="inner">
-          <h1 class="heading alt">
-            Partner with Women's Hope & Hope Adoptions
-          </h1>
-          <p>
-            ...we exist to glorify God through sharing the Gospel of Christ
-            while empowering individuals to make healthy, Godly decisions for
-            life.
-          </p>
-          <div class="image fit special" id="hero-img">
-            <img
-              src="/hope/images/mom-and-baby-shoulder.jpg"
-              alt="mom and baby"
-            />
-          </div>
-          <ul class="feature-icons">
-            <li>
-              <span class="icon solid fa-baby"></span
-              ><span class="label">Pregnancy Care</span>
-            </li>
-            <li>
-              <span class="icon solid fa-hands-holding-child"></span
-              ><span class="label">Parenting Program</span>
-            </li>
-            <li>
-              <span class="icon solid fa-house"></span
-              ><span class="label">Hope Adoptions</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <body>
+    <main>
+      <!-- Navbar & Hero Section -->
+      <!-- <section
+      id="hero"
+      class="bg-[url('/hope/images/baby-bw-square.svg')] bg-cover bg-center h-dvh md:bg-[url('/hope/images/baby-bw-hero.svg')] min-h-96"
+    > -->
+      <section
+        id="hero"
+        class="bg-[url('/hope/images/mom-and-baby-shoulder.jpg')] bg-cover bg-center h-dvh md:bg-[url('/hope/images/mom-and-baby-shoulder.jpg')] min-h-96"
+      >
+        <nav class="bg-blueGreyDark">
+          <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between px-4 py-3">
+              <div>
+                <a href="/hope/index.html"
+                  ><img
+                    class="h-16 m-3"
+                    src="images/whmc_ha_combined_logo_900x225.svg"
+                    alt="WHMC HA logo"
+                /></a>
+              </div>
 
-    <!-- One -->
-    <div id="one">
-      <div class="wrapper special">
-        <div class="inner">
-          <!-- <header class="major">
-            <h2>Amet magna adipiscing</h2>
-          </header> -->
-          <div class="image fit special">
-            <a href="/hope/partner.html"
-              ><img src="/hope/images/BBB6.png" alt=""
-            /></a>
-          </div>
-          <p class="special" style="font-size: 1.15rem">
-            Each summer, Women’s Hope Medical Clinic & Hope Adoptions joins
-            pregnancy resource centers around the United States in a simple (and
-            fun!) campaign: the Baby Bottle Boomerang! This campaign is a way
-            for churches, families, and individuals to have hands-on involvement
-            in supporting the real life-saving work that the Lord allows us to
-            do here in East Alabama. <br /><em
-              ><b>Click below to learn more!</b></em
-            >
-          </p>
-          <ul class="actions">
-            <li><a href="/hope/partner.html" class="button">Details</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Two -->
-    <!-- <div id="two">
-      <div class="wrapper style2">
-        <div class="inner">
-          <div class="spotlights">
-            <div class="intro">
-              <header>
-                <h2 class="left">
-                  Eu ligula<br />
-                  consequat
-                </h2>
-                <p>
-                  Sed egestas, ante et vulputate volutpat pede semper est, vitae
-                  luctus metus libero eu augue. Morbi purus libero, faucibus
-                  adipiscing.
-                </p>
-              </header>
-              <ul class="actions">
-                <li><a href="#" class="button">Details</a></li>
-              </ul>
-            </div>
-            <div class="spotlight">
-              <div class="image fit">
-                <img src="images/pic03.jpg" alt="" />
-              </div>
-              <div class="content">Magna sed tempus</div>
-            </div>
-            <div class="spotlight">
-              <div class="image fit">
-                <img src="images/pic04.jpg" alt="" />
-              </div>
-              <div class="content">Lorem ipsum dolor</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Three -->
-    <!-- <div id="three">
-      <div class="wrapper alt special">
-        <header class="major">
-          <h2>Ante gravida elementum</h2>
-          <p>
-            Sed egestas, ante et vulputate volutpat pede semper est, vitae
-            luctus metus libero eu augue. Morbi purus libero, faucibus
-            adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
-            elementum lorem ipsum dolor sit amet consequat hendrerit tortor
-            semper lorem at felis.
-          </p>
-        </header>
-        <div class="wrapper style3">
-          <div class="inner">
-            <div class="profiles">
-              <div class="profile">
-                <div class="image">
-                  <img src="images/pic05.jpg" alt="" />
-                </div>
-                <div class="content">
-                  <h3>Ipsum nullam</h3>
-                  <p>
-                    Sed egestas, ante et vulputate volutpat pede semper est
-                    luctus metus eu augue. Morbi purus amet libero.
-                  </p>
-                  <ul class="actions">
-                    <li><a href="#" class="button small">More</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="profile">
-                <div class="image">
-                  <img src="images/pic06.jpg" alt="" />
-                </div>
-                <div class="content">
-                  <h3>Metus gravida</h3>
-                  <p>
-                    Sed egestas, ante et vulputate volutpat pede semper est
-                    luctus metus eu augue. Morbi purus amet libero.
-                  </p>
-                  <ul class="actions">
-                    <li><a href="#" class="button small">More</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="profile">
-                <div class="image">
-                  <img src="images/pic07.jpg" alt="" />
-                </div>
-                <div class="content">
-                  <h3>Faucibus lorem</h3>
-                  <p>
-                    Sed egestas, ante et vulputate volutpat pede semper est
-                    luctus metus eu augue. Morbi purus amet libero.
-                  </p>
-                  <ul class="actions">
-                    <li><a href="#" class="button small">More</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer>
-          <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
-          </ul>
-        </footer>
-      </div>
-    </div> -->
-
-    <!-- Footer -->
-    <div id="footer">
-      <header class="major">
-        <h2 style="color: #424242; margin-bottom: 11px">Contact Us</h2>
-        <a href="mailto:info@womenshope.org"
-          ><p style="font-size: 1.5rem; margin-bottom: 3rem">
-            info@womenshope.org
-          </p></a
-        >
-      </header>
-      <!-- <div class="wrapper style2">
-        <div class="inner">
-          <header class="major">
-            <h2>Get in touch</h2>
-            <p>
-              Sed egestas, ante et vulputate volutpat pede semper est, vitae
-              luctus metus libero eu augue. Morbi purus libero, faucibus
-              adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
-              elementum lorem ipsum dolor sit amet consequat hendrerit tortor
-              semper lorem at felis.
-            </p>
-          </header>
-          <div class="content">
-            <div class="form">
-              <form method="post" action="#">
-                <div class="fields">
-                  <div class="field half">
-                    <input
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                      type="text"
-                    />
-                  </div>
-                  <div class="field half">
-                    <input
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                      type="email"
-                    />
-                  </div>
-                  <div class="field">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows="6"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul class="actions special">
-                  <li>
-                    <input type="button" class="button" value="Send Message" />
-                  </li>
-                </ul>
-              </form>
-            </div>
-            <ul class="icons">
-              <li>
-                <span class="icon solid fa-home"></span>
-                <div>
-                  <strong>Address</strong>
-                  1234 Somewhere Road #543<br />
-                  Nashville, TN 00000
-                </div>
-              </li>
-              <li>
-                <span class="icon solid fa-envelope"></span>
-                <div>
-                  <strong>Email</strong>
-                  <a href="mailto:information@domain.ext"
-                    >information@domain.ext</a
+              <div id="menu-bar">
+                <div
+                  class="hidden md:flex md:flex-row md:justify-between md:align-middle gap-6 mr-10"
+                >
+                  <!-- <a
+                  href="#"
+                  class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+                  >About</a
+                >
+                <a
+                  href="#"
+                  class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+                  >Connect</a
+                > -->
+                  <a
+                    href="./walk.html"
+                    class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+                    >Walk + 5k</a
+                  >
+                  <a
+                    href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
+                    target="_blank"
+                    class="p-3 px-6 pt-2 text-blueGreyDark font-semibold bg-white rounded-full hover:bg-liteBlue"
+                    >Donate</a
                   >
                 </div>
-              </li>
-              <li>
-                <span class="icon solid fa-phone"></span>
-                <div>
-                  <strong>Phone</strong>
-                  (000) 000-0000 ext 0000
-                </div>
-              </li>
-            </ul>
+                <button
+                  type="button"
+                  id="toggle-button"
+                  class="block text-white hover:text-liteBlue focus:text-liteBlue focus:outline-none md:hidden"
+                >
+                  <svg
+                    class="w-10 h-10 fill-current"
+                    viewBox="0 0 24 24"
+                    id="hamburger-menu"
+                  >
+                    <path
+                      d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              id="dropdown-menu"
+              class="hidden absolute px-2 pb-4 pt-5 flex flex-col gap-6 items-center bg-blueGreyDark bg-opacity-90 w-full"
+            >
+              <!-- <a
+              href="#"
+              class="block text-white px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block text-white mt-1 px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+              >Connect</a
+            > -->
+              <a
+                href="./walk.html"
+                class="block text-white mt-1 px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+                >Walk + 5k</a
+              >
+              <a
+                href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
+                target="_blank"
+                class="p-3 px-6 pt-2 mx-9 my-4 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
+                >Donate</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar (Old) -->
+        <!-- <nav
+          class="relative mx-auto px-6 bg-blueGreyDark bg-opacity-75"
+          id="home"
+        >
+          <div class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="pt-2">
+              <a href="#home">
+                <img
+                  class="max-h-[100px] m-0"
+                  src="/hope/images/whmc_ha_combined_logo_900x250.svg"
+                  alt="WHMC logo"
+                />
+              </a>
+            </div>
+            <div class="flex justify-between items-center space-x-5 ml-7">
+              <div
+                class="hidden md:flex space-x-10 text-blueGreyWhite align-middle"
+              >
+                <a href="#" class="hover:text-liteBlue">Updates</a>
+                <a href="#" class="hover:text-liteBlue">Volunteer</a>
+                <a href="#" class="hover:text-liteBlue">Walk+5k</a>
+              </div>
+              <div>
+                <a
+                  href=""
+                  class="hidden md:block p-3 px-6 pt-2 mx-9 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
+                  >Donate</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav> -->
+
+        <!-- Hero Section -->
+        <div
+          class="md:max-w-7xl md:m-auto md:mt-16 h-screen md:h-auto flex items-center"
+        >
+          <!-- Flex container -->
+          <div
+            class="container shadow-xl rounded-md flex w-fit m-5 p-5 bg-white bg-opacity-70 md:max-w-lg md:p-14 md:flex-row"
+          >
+            <!-- Left item -->
+            <div class="flex flex-shrink flex-col space-y-12">
+              <h1
+                class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+              >
+                Sharing hope for every story.
+              </h1>
+              <p
+                class="max-w-sm text-center font-medium text-blueGreyDark md:text-left"
+              >
+                The mission of Women's Hope Medical Clinic (WHMC) is twofold.
+                First, we are a Christian ministry dedicated to meeting the
+                physical, emotional and spiritual needs of those facing
+                unplanned pregnancy. Second, we actively promote the sanctity of
+                human life and the benefits of healthy relationships and sexual
+                risk avoidance.
+              </p>
+              <div class="flex justify-center md:justify-start">
+                <a
+                  href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
+                  target="_blank"
+                  class="p-3 px-6 pt-2 text-blueGreyWhite font-semibold bg-darkBlue rounded-full baseline hover:bg-midBlue"
+                  >Donate</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <div class="copyright">
-          <a href="https://www.partnerwith.net" target="_blank">
-            <img
-              src="../img/PARTNERwith_net-banner-white-transparent.png"
-              alt="PARTNERwith Logo"
-              class="footer-logo"
-              style="max-width: 450px"
-            />
-          </a>
+      </section>
+      <section>
+        <div class="justify-center mx-auto my-16 md:max-w-7xl">
+          <div
+            class="p-16 my-auto text-center justify-center align-middle text-4xl font-semibold"
+          >
+            Partner With Us to bring the
+            <span class="text-darkBlue font-semibold">Hope of the Gospel</span>
+            to the stories of women, men, and children of East Alabama.
+          </div>
+          <!-- <div
+            class="p-16 m-auto text-center justify-center align-middle text-lg"
+          >
+            We exist to glorify God through sharing the Gospel of Christ while
+            empowering individuals to make healthy, Godly decisions for life.
+          </div> -->
+          <div class="bg-blueGreyWhite rounded-xl">
+            <div
+              class="px-16 pt-16 m-auto text-center justify-center align-middle text-3xl font-bold flex"
+            >
+              <h1>What We Do</h1>
+            </div>
+            <!-- Services Cards Flex Container-->
+            <div
+              class="p-16 m-auto text-center justify-center align-middle text-lg flex flex-col md:flex-row md:space-x-20"
+            >
+              <div>
+                <h2>Pregnancy Care</h2>
+                <img
+                  src="/hope/images/icons8-baby-96.png"
+                  alt="baby icon"
+                  class="m-auto mt-5 mb-10"
+                />
+              </div>
+              <div>
+                <h2>Parenting Program</h2>
+                <img
+                  src="/hope/images/icons8-stroller-stamp-96.png"
+                  alt="stroller icon"
+                  class="m-auto mt-5 mb-10"
+                />
+              </div>
+              <div>
+                <h2>Adoption Services</h2>
+                <img
+                  src="/hope/images/icons8-adoption-96.png"
+                  alt="family icon"
+                  class="m-auto mt-5 mb-10"
+                />
+              </div>
+              <div>
+                <h2>Abortion Recovery</h2>
+                <img
+                  src="/hope/images/icons8-heal-glyph-neue-96.png"
+                  alt="aid icon"
+                  class="m-auto mt-5 mb-10"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div> -->
-      <div class="copyright">
-        <div class="footer-logo">
-          <a href="https://www.partnerwith.net" target="_blank">
-            <img
-              src="../img/PARTNERwith_net-banner-white-transparent.png"
-              alt="PARTNERwith Logo"
-              class="pw-logo"
-              style="max-width: 350px"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- <footer class="footer">
-      <div class="footer-container">
-        <a href="https://www.partnerwith.net" target="_blank">
-          <img
-            src="../img/PARTNERwith_net-banner-white-transparent.png"
-            alt="PARTNERwith Logo"
-            class="footer-logo"
-          />
-        </a>
-      </div>
-    </footer> -->
+      </section>
+      <div>
+        <div
+          id="modal"
+          class="fixed inset-0 bg-blueGreyLite bg-opacity-75 hidden justify-center items-center p-4 z-50 max-h-screen"
+        >
+          <div class="flex justify-center items-center h-full w-full">
+            <div
+              class="bg-transparent rounded-lg p-2 fade-in modal-content flex-col md:w-1/3 md:max-h-screen md:flex md:flex-row"
+            >
+              <!-- <div class="mb-4">
+                <h2 class="text-xl font-bold">Modal Title</h2>
+              </div> -->
 
-    <!-- Scripts -->
-    <script src="/hope/assets/js/jquery.min.js"></script>
-    <script src="/hope/assets/js/jquery.dropotron.min.js"></script>
-    <script src="/hope/assets/js/browser.min.js"></script>
-    <script src="/hope/assets/js/breakpoints.min.js"></script>
-    <script src="/hope/assets/js/util.js"></script>
-    <script src="/hope/assets/js/main.js"></script>
+              <div class="max-h-1/2 flex">
+                <a href="/hope/walk.html">
+                  <img
+                    src="/hope/images/walk-run-square.png"
+                    alt="walk for life image"
+                    class="rounded-lg shadow-2xl"
+                /></a>
+                <!-- <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum."
+                </p> -->
+              </div>
+              <div class="flex place-content-end">
+                <button
+                  id="closeModal"
+                  class="bg-transparent text-white rounded-md py-2 px-2 font-semibold text-xl flex place-content-end align-middle"
+                >
+                  <!-- <img
+                    src="img/iconmonstr-x-mark-6.svg"
+                    alt="x icon"
+                    class="opacity-75"
+                  /> -->
+                  <img
+                    src="/hope/images/icons8-circled-x-96-blue.png"
+                    alt="x icon"
+                    class="w-1/3 md:w-full"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button
+          id="openModal"
+          class="bg-slate-400 text-white rounded-md p-2 m-4"
+        >
+          Open Modal
+        </button> -->
+      </div>
+    </main>
+    <footer class="bg-blueGreyDark text-white">
+      <!-- Grid Container -->
+      <div class="max-w-7xl mx-auto">
+        <div class="container mx-auto py-14 px-6">
+          <div class="grid grid-cols-1 gap-16 md:grid-cols-3">
+            <div class="col-span-3 lg:col-span-1 text-center">
+              <div class="flex flex-col items-center">
+                <a href="/hope/index.html">
+                  <img
+                    class="h-16 pb-2"
+                    src="images/Hope-PW-site-logo.svg"
+                    alt="WHMC logo"
+                  />
+                </a>
+                <div class="flex flex-col justify-start">
+                  <h6 class="flex text-base mt-10 align-middle">
+                    <img
+                      class="h-6 mr-4"
+                      src="images/icons8-phone-96-white.png"
+                      alt="phone"
+                    />
+                    <a href="tel:3345027000">334-502-7000</a>
+                  </h6>
+                  <h6 class="flex text-base my-2 align-middle">
+                    <img
+                      class="h-6 mr-4"
+                      src="images/icons8-email-96-white.png"
+                      alt="email"
+                    /><a href="mailto:info@womenshope.org"
+                      >info@womenshope.org</a
+                    >
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-3 lg:col-span-1 text-center">
+              <h5 class="font-semibold pb-5">Partner With Us Today</h5>
+              <div>
+                <a
+                  href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
+                  target="_blank"
+                  class="p-3 px-6 pt-2 mx-9 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
+                  >Donate</a
+                >
+              </div>
+              <p class="mt-14 text-sm">
+                Women's Hope Medical Clinic is a registered 501(c)3 nonprofit.
+              </p>
+            </div>
+            <div class="col-span-3 lg:col-span-1">
+              <h6 class="text-center font-semibold">
+                Accreditation & Affiliation
+              </h6>
+              <!-- <div class="flex flex-col justify-center md:justify-end"> -->
+              <div class="flex flex-col place-items-center lg:justify-end">
+                <div class="grid grid-cols-1 place-items-center md:grid-cols-4">
+                  <img
+                    class="max-h-24 p-5"
+                    src="images/ecfa_white.png"
+                    alt=""
+                  />
+                  <img
+                    class="max-h-24 col-span-3 p-5"
+                    src="images/Care-Net-Home-Page_Logo.png"
+                    alt=""
+                  />
+                  <img
+                    class="max-h-24 p-5"
+                    src="images/NIFLA-gray-white.png"
+                    alt=""
+                  />
+                  <img
+                    class="max-h-24 col-span-3 p-5"
+                    src="images/HBI_Horizontal_1CR_White.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <p>___________________________________</p>
+      </div>
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-center">
+          <a href="https://www.partnerwith.net" target="_blank">
+            <img
+              src="images/PARTNERwith_net-banner-white-transparent.png"
+              alt="PARTNERwith Logo"
+              class="max-w-96"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // try following this instead --> https://codepen.io/devdojo/pen/NWyPrGe & https://youtu.be/RI9sG74RSq8?si=5gZK3H8f5R8rc4UG
+      const toggleBtn = document.querySelector("#toggle-button");
+      const dropdown = document.querySelector("#dropdown-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("hidden");
+      });
+
+      const openModalBtn = document.getElementById("openModal");
+      const closeModalBtn = document.getElementById("closeModal");
+      const modal = document.getElementById("modal");
+
+      // openModalBtn.addEventListener("click", () => {
+      //   modal.classList.remove("hidden");
+      // });
+
+      window.onload = function () {
+        modal.classList.remove("hidden");
+      };
+
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
