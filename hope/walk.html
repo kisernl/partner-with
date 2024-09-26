@@ -1,258 +1,426 @@
 <!DOCTYPE html>
-<!--
-	Inverse by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
+<html lang="en">
   <head>
-    <title>hope partner</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <header id="header">
-      <!-- <div id="logo"> -->
-      <a class="logo" href="index.html">
-        <img src="images/whmc_ha_combined_logo_900x250.png" alt="hope logo" />
-      </a>
-      <!-- </div> -->
-      <nav id="nav">
-        <ul>
-          <li class="current"><a href="/hope/index.html">Home</a></li>
-          <!-- <li>
-            <a href="#" class="dropdown">Dropdown</a>
-            <ul>
-              <li><a href="#">Option One</a></li>
-              <li><a href="#">Option Two</a></li>
-              <li><a href="#">Option Three</a></li>
-              <li>
-                <a href="#">Submenu</a>
-                <ul>
-                  <li><a href="#">Option One</a></li>
-                  <li><a href="#">Option Two</a></li>
-                  <li><a href="#">Option Three</a></li>
-                  <li><a href="#">Option Four</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li> -->
-          <li><a href="/hope/partner.html">Partner</a></li>
-          <!-- <li><a href="/hope/give.html">Give</a></li> -->
-        </ul>
-      </nav>
-    </header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              transparent: "transparent",
+              current: "currentColor",
+              darkBlue: "#0F609B",
+              midBlue: "#4098D7",
+              liteBlue: "#B6E0FE",
+              whiteBlue: "#DCEEFB",
+              blueGreyDark: "#334E68",
+              blueGreyMid: "#829AB1",
+              blueGreyLite: "#D9E2EC",
+              blueGreyWhite: "#F0F4F8",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Walk+5k</title>
 
-    <!-- One -->
-    <div id="main">
-      <div class="wrapper" style="padding-top: 0">
-        <div class="inner">
-          <!-- <header class="major">
-            <h1>Baby Bottle Boomerang!</h1>
-            <p>
-              Caring for babies (and their moms & dads) one dollar at a time!
-            </p>
-          </header> -->
-          <div class="image main">
-            <img src="images/BBB6.png" alt="" />
+    <meta property="og:title" content="walk page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/whmc_ha_combined_logo_900x250" />
+    <meta property="og:url" content="https://partnerwith.net/hope" />
+    <meta
+      property="og:description"
+      content="Bringing hope into the stories of women, men, and children in East Alabama"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Hope" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="bg-blueGreyDark">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between px-4 py-3">
+          <div>
+            <a href="/hope/index.html"
+              ><img
+                class="h-16 m-3"
+                src="images/whmc_ha_combined_logo_900x225.svg"
+                alt="WHMC HA logo"
+            /></a>
           </div>
-          <!-- <div class="box"> -->
-          <p style="text-align: justify; font-size: 1.15rem">
-            Each summer, Women’s Hope Medical Clinic & Hope Adoptions joins
-            pregnancy resource centers around the United States in a simple (and
-            fun!) campaign: the Baby Bottle Boomerang! This campaign is a way
-            for churches, families, and individuals to have hands-on involvement
-            in supporting the real life-saving work that the Lord allows us to
-            do here in East Alabama. <br /><br />
-            The HOPE team loves this event because it brings us all together for
-            one goal: to support women within our community who enter our clinic
-            facing unplanned pregnancies, coming alongside them to empower them
-            to choose life. When you partner with us for Baby Bottle Boomerang,
-            you are helping us fulfill our mission to provide women with medical
-            care, holistic support, and alternatives to abortion while
-            proclaiming the hope of the Gospel!
-          </p>
-          <h2>Ways to Partner</h2>
-          <!-- </div> -->
-          <div class="box">
-            <h3>Give</h3>
-            <ul class="actions">
-              <!-- <li>
+
+          <div id="menu-bar">
+            <div
+              class="hidden md:flex md:flex-row md:justify-between md:align-middle gap-6 mr-10"
+            >
+              <!-- <a
+                href="#"
+                class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+                >About</a
+              >
+              <a
+                href="#"
+                class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+                >Connect</a
+              > -->
+              <a
+                href="./walk.html"
+                class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+                >Walk + 5k</a
+              >
+              <a
+                href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
+                target="_blank"
+                class="p-3 px-6 pt-2 text-blueGreyDark font-semibold bg-white rounded-full hover:bg-liteBlue"
+                >Donate</a
+              >
+            </div>
+            <button
+              type="button"
+              id="toggle-button"
+              class="block text-white hover:text-liteBlue focus:text-liteBlue focus:outline-none md:hidden"
+            >
+              <svg
+                class="w-10 h-10 fill-current"
+                viewBox="0 0 24 24"
+                id="hamburger-menu"
+              >
+                <path
+                  d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          id="dropdown-menu"
+          class="hidden absolute px-2 pb-4 pt-5 flex flex-col gap-6 items-center bg-blueGreyDark bg-opacity-90 w-full"
+        >
+          <!-- <a
+            href="#"
+            class="block text-white px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+            >About</a
+          >
+          <a
+            href="#"
+            class="block text-white mt-1 px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+            >Connect</a
+          > -->
+          <a
+            href="./walk.html"
+            class="block text-white mt-1 px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+            >Walk + 5k</a
+          >
+          <a
+            href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
+            target="_blank"
+            class="p-3 px-6 pt-2 mx-9 my-4 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
+            >Donate</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-7xl mx-auto">
+      <section id="hero">
+        <div
+          class="hidden md:block max-h-svh m-10 flex justify-center items-center"
+        >
+          <img src="images/walk-2024-banner-long.png" alt="" />
+        </div>
+        <div class="md:hidden flex justify-center m-2">
+          <img src="images/walk-2024-mobile-banner.png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex flex-col place-items-center mb-10 md:grid md:grid-cols-2"
+        >
+          <!-- card below-->
+          <div
+            class="flex flex-col text-center bg-slate-100 shadow-lg border-2 m-8 px-6 py-4 rounded w-3/4"
+          >
+            <div>
+              <!-- title -->
+              <h3 class="text-3xl font-semibold text-slate-900">1 Mile Walk</h3>
+              <p class="pt-3 pb-1">
+                Click below and locate the gold “register” button on the right
+                of the page to join us in 1 Mile Walk. Follow the prompts when
+                you finish to create your own fundraising page and share it with
+                your community to help us reach our $100,000 goal!
+              </p>
+            </div>
+            <div class="py-2">
+              <!-- button -->
+              <button
+                type="button"
+                class="bg-blueGreyDark mt-4 px-6 pb-4 pt-3 rounded-md text-white max-w-md text-xl font-semibold"
+              >
                 <a
-                  href="#"
-                  class="button primary"
-                  style="background-color: #464666"
-                  >PayPal</a
+                  href="https://secure.fundeasy.com/ministrysync/event/website/home/?e=28394&blm_aid=0"
+                  target="_blank"
+                  >Sign Up</a
                 >
-              </li>
-              <li><a href="#" class="button">Venmo</a></li> -->
-              <li>
+              </button>
+            </div>
+          </div>
+          <!-- card below-->
+          <div
+            class="flex flex-col text-center bg-slate-100 shadow-lg border-2 m-8 px-6 py-4 rounded w-3/4"
+          >
+            <div>
+              <!-- title -->
+              <h3 class="text-3xl font-semibold text-slate-900">5k Run</h3>
+              <p class="pt-3 pb-1">
+                Click below to register for the 5K Run Home Page. Locate the
+                blue “Sign Up” button on the page to get started. If you would
+                also like to help us raise funds by finding people to sponsor
+                your run, please register under the 1 Mile Walk link as well.
+              </p>
+            </div>
+            <div class="py-2">
+              <!-- button -->
+              <button
+                type="button"
+                class="bg-blueGreyDark mt-4 px-6 pb-4 pt-3 rounded-md text-white max-w-md text-xl font-semibold"
+              >
+                <a
+                  href="https://runsignup.com/Race/AL/Opelika/WalkForLifeK?blm_aid=0"
+                  target="_blank"
+                  >Register</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- card below-->
+          <div
+            class="flex flex-col text-center bg-slate-100 shadow-lg border-2 m-8 px-6 py-4 rounded w-3/4"
+          >
+            <div>
+              <!-- title -->
+              <h3 class="text-3xl font-semibold text-slate-900">
+                Sponsor a Walker
+              </h3>
+              <p class="pt-3 pb-1">
+                Click below and locate the white “donate” button on the right of
+                the page under the “register” button to access a list of
+                registered walkers. Find the walker that you would like to
+                sponsor and donate toward their goal!
+              </p>
+            </div>
+            <div class="py-2">
+              <!-- button -->
+              <button
+                type="button"
+                class="bg-blueGreyDark mt-4 px-6 pb-4 pt-3 rounded-md text-white max-w-md text-xl font-semibold"
+              >
+                <a
+                  href="https://secure.fundeasy.com/ministrysync/event/website/home/?e=28394&blm_aid=0"
+                  target="_blank"
+                  >Click Here</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- card below-->
+          <div
+            class="flex flex-col text-center bg-slate-100 shadow-lg border-2 m-8 px-6 py-4 rounded w-3/4"
+          >
+            <div>
+              <!-- title -->
+              <h3 class="text-3xl font-semibold text-slate-900">Captains</h3>
+              <p class="pt-3 pb-1">
+                Click below if would like to learn more about the role of a Team
+                Captain. All the information for this role is listed here. Email
+                <a href="mailto:jessica@womenshope.org"
+                  >jessica@womenshope.org</a
+                >
+                if you have any further questions about this role! We would LOVE
+                your help!
+              </p>
+            </div>
+            <div class="py-2">
+              <!-- button -->
+              <button
+                id="openModal"
+                type="button"
+                class="bg-blueGreyDark mt-4 px-6 pb-4 pt-3 rounded-md text-white max-w-md text-xl font-semibold"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="modal"
+          class="fixed inset-0 bg-blueGreyLite bg-opacity-75 hidden justify-center items-center p-4 z-50 max-h-screen"
+        >
+          <div class="flex justify-center items-center h-full w-full">
+            <div
+              class="bg-transparent rounded-lg p-2 fade-in modal-content flex-col md:w-1/3 md:max-h-screen md:flex md:flex-row"
+            >
+              <!-- <div class="mb-4">
+                <h2 class="text-xl font-bold">Modal Title</h2>
+              </div> -->
+
+              <div class="max-h-3/4 flex">
+                <img
+                  src="/hope/images/Captain-Kick-Off-Meeting-Invite.png"
+                  alt="captain kick-off image"
+                  class="rounded-lg shadow-2xl"
+                />
+                <!-- <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum."
+                </p> -->
+              </div>
+              <div class="flex place-content-end">
+                <button
+                  id="closeModal"
+                  class="bg-transparent text-white rounded-md py-2 px-2 font-semibold text-xl flex place-content-end align-middle"
+                >
+                  <!-- <img
+                    src="img/iconmonstr-x-mark-6.svg"
+                    alt="x icon"
+                    class="opacity-75"
+                  /> -->
+                  <img
+                    src="/hope/images/icons8-circled-x-96-blue.png"
+                    alt="x icon"
+                    class="w-1/3 md:w-full"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-blueGreyDark text-white">
+      <!-- Grid Container -->
+      <div class="max-w-7xl mx-auto">
+        <div class="container mx-auto py-14 px-6">
+          <div class="grid grid-cols-1 gap-16 md:grid-cols-3">
+            <div class="col-span-3 lg:col-span-1 text-center">
+              <div class="flex flex-col items-center">
+                <a href="/hope/index.html">
+                  <img
+                    class="h-16 pb-2"
+                    src="images/Hope-PW-site-logo.svg"
+                    alt="WHMC logo"
+                  />
+                </a>
+                <div class="flex flex-col justify-start">
+                  <h6 class="flex text-base mt-10 align-middle">
+                    <img
+                      class="h-6 mr-4"
+                      src="images/icons8-phone-96-white.png"
+                      alt="phone"
+                    />
+                    <a href="tel:3345027000">334-502-7000</a>
+                  </h6>
+                  <h6 class="flex text-base my-2 align-middle">
+                    <img
+                      class="h-6 mr-4"
+                      src="images/icons8-email-96-white.png"
+                      alt="email"
+                    /><a href="mailto:info@womenshope.org"
+                      >info@womenshope.org</a
+                    >
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-3 lg:col-span-1 text-center">
+              <h5 class="font-semibold pb-5">Partner With Us Today</h5>
+              <div>
                 <a
                   href="https://crm.bloomerang.co/HostedDonation?ApiKey=pub_9b3ebb83-4461-11ea-8134-0ab2f2f28c00&WidgetId=162144256"
                   target="_blank"
-                  class="button primary"
-                  style="background-color: #0c7ec2"
+                  class="p-3 px-6 pt-2 mx-9 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
                   >Donate</a
                 >
-              </li>
-            </ul>
-            <h3>Pray</h3>
-            <a
-              href="https://drive.google.com/file/d/1wpT7WcTCsr_bA24UV3Huru3C_ikf7pod/view?usp=sharing"
-              target="_blank"
-              style="color: #0c7ec2"
-              ><p>
-                <b style="color: #0c7ec2">Download Our Prayer Guide Here</b>
-              </p></a
-            >
-            <!-- <br />
-            <h3>Share</h3>
-            <p>Insert Here</p> -->
+              </div>
+              <p class="mt-14 text-sm">
+                Women's Hope Medical Clinic is a registered 501(c)3 nonprofit.
+              </p>
+            </div>
+            <div class="col-span-3 lg:col-span-1">
+              <h6 class="text-center font-semibold">
+                Accreditation & Affiliation
+              </h6>
+              <!-- <div class="flex flex-col justify-center md:justify-end"> -->
+              <div class="flex flex-col place-items-center lg:justify-end">
+                <div class="grid grid-cols-1 place-items-center md:grid-cols-4">
+                  <img
+                    class="max-h-24 p-5"
+                    src="images/ecfa_white.png"
+                    alt=""
+                  />
+                  <img
+                    class="max-h-24 col-span-3 p-5"
+                    src="images/Care-Net-Home-Page_Logo.png"
+                    alt=""
+                  />
+                  <img
+                    class="max-h-24 p-5"
+                    src="images/NIFLA-gray-white.png"
+                    alt=""
+                  />
+                  <img
+                    class="max-h-24 col-span-3 p-5"
+                    src="images/HBI_Horizontal_1CR_White.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-
-          <!-- <div class="box">
-            <h3>Give</h3>
-            <ul class="actions">
-              <li>
-                <a
-                  href="#"
-                  class="button primary"
-                  style="background-color: #464666"
-                  >PayPal</a
-                >
-              </li>
-              <li><a href="#" class="button">Venmo</a></li>
-            </ul>
-          </div>
-
-          <div class="box">
-            <h3>Resources</h3>
-            <br />
-            <h4>Prayer Sheet</h4>
-            <p>Insert Here</p>
-            <br />
-            <h4>Pro-life conversations with your children</h4>
-            <p>Insert Here</p>
-          </div> -->
         </div>
       </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="footer">
-      <!-- <div class="wrapper style2">
-        <div class="inner">
-          <header class="major">
-            <h2>Get in touch</h2>
-            <p>
-              Sed egestas, ante et vulputate volutpat pede semper est, vitae
-              luctus metus libero eu augue. Morbi purus libero, faucibus
-              adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
-              elementum lorem ipsum dolor sit amet consequat hendrerit tortor
-              semper lorem at felis.
-            </p>
-          </header>
-          <div class="content">
-            <div class="form">
-              <form method="post" action="#">
-                <div class="fields">
-                  <div class="field half">
-                    <input
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                      type="text"
-                    />
-                  </div>
-                  <div class="field half">
-                    <input
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                      type="email"
-                    />
-                  </div>
-                  <div class="field">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows="6"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul class="actions special">
-                  <li>
-                    <input type="button" class="button" value="Send Message" />
-                  </li>
-                </ul>
-              </form>
-            </div>
-            <ul class="icons">
-              <li>
-                <span class="icon solid fa-home"></span>
-                <div>
-                  <strong>Address</strong>
-                  1234 Somewhere Road #543<br />
-                  Nashville, TN 00000
-                </div>
-              </li>
-              <li>
-                <span class="icon solid fa-envelope"></span>
-                <div>
-                  <strong>Email</strong>
-                  <a href="mailto:information@domain.ext"
-                    >information@domain.ext</a
-                  >
-                </div>
-              </li>
-              <li>
-                <span class="icon solid fa-phone"></span>
-                <div>
-                  <strong>Phone</strong>
-                  (000) 000-0000 ext 0000
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          &copy; Untitled. All rights reserved. Lorem ipsum dolor sit amet.
-        </div>
-      </div> -->
-      <div class="copyright">
-        <div class="footer-logo">
+      <div class="flex justify-center">
+        <p>___________________________________</p>
+      </div>
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-center">
           <a href="https://www.partnerwith.net" target="_blank">
             <img
-              src="../img/PARTNERwith_net-banner-white-transparent.png"
+              src="images/PARTNERwith_net-banner-white-transparent.png"
               alt="PARTNERwith Logo"
-              class="pw-logo"
-              style="max-width: 350px"
+              class="max-w-96"
             />
           </a>
         </div>
       </div>
-    </div>
+    </footer>
+    <script>
+      // try following this instead --> https://codepen.io/devdojo/pen/NWyPrGe & https://youtu.be/RI9sG74RSq8?si=5gZK3H8f5R8rc4UG
+      const toggleBtn = document.querySelector("#toggle-button");
+      const dropdown = document.querySelector("#dropdown-menu");
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("hidden");
+      });
+
+      const openModalBtn = document.getElementById("openModal");
+      const closeModalBtn = document.getElementById("closeModal");
+      const modal = document.getElementById("modal");
+
+      openModalBtn.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
