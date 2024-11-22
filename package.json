@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "repo for ParnterWith.net",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
